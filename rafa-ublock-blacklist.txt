@@ -1,0 +1,31 @@
+! Title: uBlock filters – Annoyances
+! Description: Static personal blacklist
+! Homepage: https://github.com/rafagale/ubo-static-blacklist
+! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
+
+! 2022-03-15 https://www.tiendanimal.es
+www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
+! 2022-03-15 https://forum.xda-developers.com
+forum.xda-developers.com###xdadevelopers_leaderboard_atf
+! 2022-03-17 https://www.theverge.com
+www.theverge.com##.remixd-wrapper
+! 2022-03-17 https://elchapuzasinformatico.com
+||elchapuzasinformatico.com/wp-content/uploads/2022/01/B4nner-MSI-Intel-Z690.jpg$image
+! 2022-03-19 https://www.heraldo.es
+www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon
+www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon
+www.heraldo.es##.contenido-suscripcion.titleIcon
+www.heraldo.es##.top_ads_container
+www.heraldo.es##[href^="https://tienda.heraldo.es/suscripcion-digital"]
+www.heraldo.es##.btn-suscripcion
+www.heraldo.es##.contenido-suscripcion-content
+! 2022-03-20 https://www.elperiodicodearagon.com
+www.elperiodicodearagon.com##a.btn-header-premium > span
+www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
+www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)
+||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+www.elperiodicodearagon.com##.commercial-up-full__wrapper
+www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
+www.elperiodicodearagon.com##._mo_recs
