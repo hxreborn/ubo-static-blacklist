@@ -31,3 +31,14 @@ www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.
 www.elperiodicodearagon.com##._mo_recs
 ! 2022-03-22 https://www.ecosia.org
 ecosia.org##[data-test-id="ad-block-notice"]
+! 2022-03-26 https://computerhoy.com
+computerhoy.com##.wrapper_roba_1
+computerhoy.com##.wrapper_roba_outstream
+! 2022-03-26 https://www.elespanol.com
+www.elespanol.com##.article-adv--header.article-adv
+www.elespanol.com###article-body-content > .article-bodyadv--gpt.article-bodyadv
+www.elespanol.com##.article-mediacaption > .article-bodyadv--gpt.article-body__adv
+www.elespanol.com###link_bar_top_user_area
+www.elespanol.com##.adv_inline
+www.elespanol.com##.article-adv__content
+www.elespanol.com##.article-adv--sidebar.article-adv
