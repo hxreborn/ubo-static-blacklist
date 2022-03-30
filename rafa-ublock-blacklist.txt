@@ -29,6 +29,7 @@ www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)
 www.elperiodicodearagon.com##.commercial-up-full__wrapper
 www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
 www.elperiodicodearagon.com##._mo_recs
+www.elperiodicodearagon.com##.sponsorship
 ! 2022-03-22 https://www.ecosia.org
 ecosia.org##[data-test-id="ad-block-notice"]
 ! 2022-03-26 https://computerhoy.com
