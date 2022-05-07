@@ -22,6 +22,7 @@ www.heraldo.es##[href^="https://tienda.heraldo.es/suscripcion-digital"]
 www.heraldo.es##.btn-suscripcion
 www.heraldo.es##.contenido-suscripcion-content
 ! 2022-03-20 https://www.elperiodicodearagon.com
+
 www.elperiodicodearagon.com##a.btn-header-premium > span
 www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
 www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)
@@ -31,6 +32,9 @@ www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.
 www.elperiodicodearagon.com##._mo_recs
 ! 2022-03-22 https://www.heraldo.es
 ||imagenes.heraldo.es/files/image_654_v1/files/fp/uploads/imagenes/2022/03/16/consigue-tu-suscripcion-digital-por-1-euro-durante-tres-meses-y-renueva-a-mitad-de-precio.r_d.600-400-0.jpeg$image
+www.elperiodicodearagon.com##.sponsorship
+! 2022-03-22 https://www.ecosia.org
+ecosia.org##[data-test-id="ad-block-notice"]
 ! 2022-03-26 https://computerhoy.com
 computerhoy.com##.wrapper_roba_1
 computerhoy.com##.wrapper_roba_outstream
