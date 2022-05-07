@@ -29,17 +29,36 @@ www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)
 www.elperiodicodearagon.com##.commercial-up-full__wrapper
 www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
 www.elperiodicodearagon.com##._mo_recs
-www.elperiodicodearagon.com##.sponsorship
-! 2022-03-22 https://www.ecosia.org
-ecosia.org##[data-test-id="ad-block-notice"]
+! 2022-03-22 https://www.heraldo.es
+||imagenes.heraldo.es/files/image_654_v1/files/fp/uploads/imagenes/2022/03/16/consigue-tu-suscripcion-digital-por-1-euro-durante-tres-meses-y-renueva-a-mitad-de-precio.r_d.600-400-0.jpeg$image
 ! 2022-03-26 https://computerhoy.com
 computerhoy.com##.wrapper_roba_1
 computerhoy.com##.wrapper_roba_outstream
 ! 2022-03-26 https://www.elespanol.com
 www.elespanol.com##.article-adv--header.article-adv
-www.elespanol.com###article-body-content > .article-bodyadv--gpt.article-bodyadv
-www.elespanol.com##.article-mediacaption > .article-bodyadv--gpt.article-body__adv
+www.elespanol.com###article-body-content > .article-body__adv--gpt.article-body__adv
+www.elespanol.com##.article-inline
+www.elespanol.com##.article-media__caption > .article-body__adv--gpt.article-body__adv
 www.elespanol.com###link_bar_top_user_area
 www.elespanol.com##.adv_inline
+www.elespanol.com##.article-inline_final
 www.elespanol.com##.article-adv__content
 www.elespanol.com##.article-adv--sidebar.article-adv
+! 2022-03-30 https://www.elperiodicodearagon.com
+www.elperiodicodearagon.com##.sponsorship
+! 2022-04-06 https://www.heraldo.es
+||imagenes.heraldo.es/files/image_486_273/files/fp/uploads/imagenes/2022/04/01/suscribete-y-comienza-a-leer-sin-limite.r_d.282-391-0.jpeg$image
+! 2022-04-12 https://www.rockmods.net
+www.rockmods.net##.isiAds
+www.rockmods.net###ignielAdBlock
+! 2022-04-13 https://amazfitwatchfaces.com
+amazfitwatchfaces.com##.growl-large.growl-notice.growl
+amazfitwatchfaces.com##.growl-medium.growl-error.growl
+! 2022-04-13 https://www.elgoldigital.com
+www.elgoldigital.com##.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+! 2022-04-28 https://www.elgoldigital.com
+www.elgoldigital.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+! 2022-05-03 https://www.cinemascomics.com
+www.cinemascomics.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+! 2022-05-03 https://www.majorcadailybulletin.com
+www.majorcadailybulletin.com##.main .right.yield.banner
