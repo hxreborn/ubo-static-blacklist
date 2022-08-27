@@ -2,67 +2,123 @@
 ! Description: Static personal blacklist
 ! Homepage: https://github.com/rafagale/ubo-static-blacklist
 ! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
-
 ! 2022-03-15 https://www.tiendanimal.es
+
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
+
 forum.xda-developers.com###xdadevelopers_leaderboard_atf
 ! 2022-03-17 https://www.theverge.com
+
 www.theverge.com##.remixd-wrapper
 ! 2022-03-17 https://elchapuzasinformatico.com
 ||elchapuzasinformatico.com/wp-content/uploads/2022/01/B4nner-MSI-Intel-Z690.jpg$image
 ! 2022-03-19 https://www.heraldo.es
+
 www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+
 www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon
+
 www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+
 www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon
+
 www.heraldo.es##.contenido-suscripcion.titleIcon
+
 www.heraldo.es##.top_ads_container
+
 www.heraldo.es##[href^="https://tienda.heraldo.es/suscripcion-digital"]
 www.heraldo.es##.btn-suscripcion
+
 www.heraldo.es##.contenido-suscripcion-content
 ! 2022-03-20 https://www.elperiodicodearagon.com
 
 www.elperiodicodearagon.com##a.btn-header-premium > span
+
 www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
-www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)
-||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+
+www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+
 www.elperiodicodearagon.com##.commercial-up-full__wrapper
+
 www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
+
 www.elperiodicodearagon.com##._mo_recs
 ! 2022-03-22 https://www.heraldo.es
 ||imagenes.heraldo.es/files/image_654_v1/files/fp/uploads/imagenes/2022/03/16/consigue-tu-suscripcion-digital-por-1-euro-durante-tres-meses-y-renueva-a-mitad-de-precio.r_d.600-400-0.jpeg$image
+
 www.elperiodicodearagon.com##.sponsorship
 ! 2022-03-22 https://www.ecosia.org
-ecosia.org##[data-test-id="ad-block-notice"]
-! 2022-03-26 https://computerhoy.com
+
+ecosia.org##[data-test-id="ad-block-notice"]! 2022-03-26 https://computerhoy.com
+
 computerhoy.com##.wrapper_roba_1
+
 computerhoy.com##.wrapper_roba_outstream
 ! 2022-03-26 https://www.elespanol.com
+
 www.elespanol.com##.article-adv--header.article-adv
+
 www.elespanol.com###article-body-content > .article-body__adv--gpt.article-body__adv
+
 www.elespanol.com##.article-inline
+
 www.elespanol.com##.article-media__caption > .article-body__adv--gpt.article-body__adv
+
 www.elespanol.com###link_bar_top_user_area
+
 www.elespanol.com##.adv_inline
+
 www.elespanol.com##.article-inline_final
+
 www.elespanol.com##.article-adv__content
+
 www.elespanol.com##.article-adv--sidebar.article-adv
 ! 2022-03-30 https://www.elperiodicodearagon.com
+
 www.elperiodicodearagon.com##.sponsorship
 ! 2022-04-06 https://www.heraldo.es
 ||imagenes.heraldo.es/files/image_486_273/files/fp/uploads/imagenes/2022/04/01/suscribete-y-comienza-a-leer-sin-limite.r_d.282-391-0.jpeg$image
 ! 2022-04-12 https://www.rockmods.net
+
 www.rockmods.net##.isiAds
+
 www.rockmods.net###ignielAdBlock
 ! 2022-04-13 https://amazfitwatchfaces.com
+
 amazfitwatchfaces.com##.growl-large.growl-notice.growl
+
 amazfitwatchfaces.com##.growl-medium.growl-error.growl
 ! 2022-04-13 https://www.elgoldigital.com
+
 www.elgoldigital.com##.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
-! 2022-04-28 https://www.elgoldigital.com
+\! 2022-04-28 https://www.elgoldigital.com
+
 www.elgoldigital.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
 ! 2022-05-03 https://www.cinemascomics.com
+
 www.cinemascomics.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
 ! 2022-05-03 https://www.majorcadailybulletin.com
+
 www.majorcadailybulletin.com##.main .right.yield.banner
+! 2022-07-04 https://www.elconfidencial.com
+www.elconfidencial.com##.news-body-complete.newsType__content > .revUnit--placeholder.revUnit
+! 2022-07-27 https://www.elperiodicodearagon.com
+||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+! 2022-07-30 https://www.kimovil.com
+www.kimovil.com##div.kau:nth-of-type(3)! 2022-07-31 https://computerhoy.com
+computerhoy.com##.roba_2.dfp-position
+computerhoy.com##.wrapper_roba_2
+! 2022-08-01 https://www.elperiodicomediterraneo.com
+||estaticos-cdn.elperiodicomediterraneo.com/assets/images/advLoading.png$image
+||estaticos-cdn.elperiodicomediterraneo.com/assets/images/advLoading.png$image
+! 2022-08-02 https://www.lavanguardia.com
+www.lavanguardia.com##.in.ev-open-modal-paywall-REQUIRE_LOGIN_WITH_ENTITLEMENT.ev.fade.show.modal
+www.lavanguardia.com###gg-alert-body
+! 2022-08-03 https://areajugones.sport.es
+areajugones.sport.es##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(1)! 2022-08-11 https://www.elperiodicomediterraneo.com
+www.elperiodicomediterraneo.com##div.bbnx-module > div.ad-container > .ad-signature
+! 2022-08-18 https://www.elconfidencial.com
+www.elconfidencial.com##.skinRevenue
+! 2022-08-25 https://www.elperiodicodearagon.com
+www.elperiodicodearagon.com##div.bbnx-module > div.ad-container > .ad-signature
