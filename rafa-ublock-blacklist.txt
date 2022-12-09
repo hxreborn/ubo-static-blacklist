@@ -122,3 +122,4 @@ www.elperiodicomediterraneo.com##div.bbnx-module > div.ad-container > .ad-signat
 www.elconfidencial.com##.skinRevenue
 ! 2022-08-25 https://www.elperiodicodearagon.com
 www.elperiodicodearagon.com##div.bbnx-module > div.ad-container > .ad-signature
+youtube.com##[page-subtype="home"] [is-shorts]
