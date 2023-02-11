@@ -123,3 +123,5 @@ www.elconfidencial.com##.skinRevenue
 ! 2022-08-25 https://www.elperiodicodearagon.com
 www.elperiodicodearagon.com##div.bbnx-module > div.ad-container > .ad-signature
 youtube.com##[page-subtype="home"] [is-shorts]
+! 2023-02-11 https://www.bizizaragoza.com
+www.bizizaragoza.com###overlay
