@@ -129,3 +129,4 @@ www.bizizaragoza.com###overlay
 
 ! 2023-03-03 https://www.recetasderechupete.com
 www.recetasderechupete.com###description > div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+www.recetasderechupete.com##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(2)
