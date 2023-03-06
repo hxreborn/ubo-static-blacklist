@@ -127,5 +127,4 @@ youtube.com##[page-subtype="home"] [is-shorts]
 www.bizizaragoza.com###overlay
 
 ! 2023-03-06 https://andro4all.com
-andro4all.com##.m-ad.ad-div
-andro4all.com##div.ad-div
+andro4all.com##.ad-div
