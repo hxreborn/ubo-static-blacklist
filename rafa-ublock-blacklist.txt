@@ -126,7 +126,6 @@ youtube.com##[page-subtype="home"] [is-shorts]
 ! 2023-02-11 https://www.bizizaragoza.com
 www.bizizaragoza.com###overlay
 
-
-! 2023-03-03 https://www.recetasderechupete.com
-www.recetasderechupete.com###description > div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
-www.recetasderechupete.com##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(2)
+! 2023-03-06 https://andro4all.com
+andro4all.com##.m-ad.ad-div
+andro4all.com##div.ad-div
