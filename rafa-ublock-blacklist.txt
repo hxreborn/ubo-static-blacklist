@@ -128,3 +128,6 @@ www.bizizaragoza.com###overlay
 
 ! 2023-03-06 https://andro4all.com
 andro4all.com##.ad-div
+! 2023-03-08 https://www.applesfera.com
+www.applesfera.com##.ad
+www.applesfera.com###stories_container
