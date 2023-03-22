@@ -6,9 +6,12 @@
 
 ! Global rules
 *##.ad
+*##.adx
+*##.axds
 *##.ads
 *##[class^="ad-"]
 *##[class^="adv-"]
+*##[class^="axds-"]
 *##[class*="ad_container"]
 *##[class*="ads_container"]
 *##[class*="adv_container"]
