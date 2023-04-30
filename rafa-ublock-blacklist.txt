@@ -15,7 +15,7 @@
 *##[class*="ad_container"]
 *##[class*="ads_container"]
 *##[class*="adv_container"]
-
+*##[class*="advertising"]
 
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
