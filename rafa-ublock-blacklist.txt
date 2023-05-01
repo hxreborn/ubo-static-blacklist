@@ -1,4 +1,4 @@
-! Title: uBlock filters – Annoyances
+! Title: uBlock filters – Static annoyances (rafagale)
 ! Description: Static personal blacklist
 ! Homepage: https://github.com/rafagale/ubo-static-blacklist
 ! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
