@@ -148,3 +148,7 @@ andro4all.com##.ad-div
 ! 2023-03-08 https://www.applesfera.com
 www.applesfera.com##.ad
 www.applesfera.com###stories_container
+
+! 2023-05-09 https://www.pravda.com.ua
+www.pravda.com.ua##.nts-ad-h280.nts-ad
+www.pravda.com.ua##.w_banner
