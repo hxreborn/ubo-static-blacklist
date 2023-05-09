@@ -10,10 +10,8 @@
 *##.axds
 *##.ads
 *##[class^="ad-"]
-*##[class$="ad-"]
 *##[class^="adv-"]
 *##[class^="axds-"]
-*##[class$="-ad"]
 *##[class$="-ad"]
 *##[class$="-adv"]
 *##[class$="-axds"]
