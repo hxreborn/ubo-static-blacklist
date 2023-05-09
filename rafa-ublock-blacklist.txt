@@ -10,8 +10,13 @@
 *##.axds
 *##.ads
 *##[class^="ad-"]
+*##[class$="ad-"]
 *##[class^="adv-"]
 *##[class^="axds-"]
+*##[class$="-ad"]
+*##[class$="-ad"]
+*##[class$="-adv"]
+*##[class$="-axds"]
 *##[class*="ad_container"]
 *##[class*="ads_container"]
 *##[class*="adv_container"]
