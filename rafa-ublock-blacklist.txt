@@ -155,3 +155,4 @@ www.applesfera.com###stories_container
 ! 2023-05-09 https://www.pravda.com.ua
 www.pravda.com.ua##.nts-ad-h280.nts-ad
 www.pravda.com.ua##.w_banner
+##.prometeoArticleBottom
