@@ -21,6 +21,7 @@
 *##[class*="advertising"]
 *##[class*="adthriove"]
 *##[class*="-ad-"]
+*##[class*="-ads"]
 ###leftSideAd
 ###rightSideAd
 
