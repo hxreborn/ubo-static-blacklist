@@ -19,9 +19,11 @@
 *##[class*="ads_container"]
 *##[class*="adv_container"]
 *##[class*="advertising"]
+*##[class$="advertisement"]
 *##[class*="adthriove"]
 *##[class*="-ad-"]
 *##[class*="-ads"]
+
 ###leftSideAd
 ###rightSideAd
 
