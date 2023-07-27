@@ -26,6 +26,8 @@
 
 ###leftSideAd
 ###rightSideAd
+###stories_container
+
 
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
@@ -165,3 +167,5 @@ www.google.*##.g:has(a[href*=".softonic."])
 www.google.*##a[href*=".softonic."]:upward(1)
 duckduckgo.com##a[data-testid="result-title-a"][href*=".softonic."]:upward(.nrn-react-div)
 duckduckgo.com##.tile-wrap a[href*=".softonic."]:upward(.tile)
+
+
