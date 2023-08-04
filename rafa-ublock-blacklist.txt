@@ -27,7 +27,7 @@
 ###leftSideAd
 ###rightSideAd
 ###stories_container
-
+*##overlay
 
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
