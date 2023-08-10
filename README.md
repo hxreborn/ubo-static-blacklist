@@ -1,6 +1,6 @@
 # ubo-static-blacklist
 
-Personal uBlock Origin blacklist of static elements to improve browsing by removing annoyances
+Personal uBlock Origin blacklist of static elements to ~improve browsing~ make browsing the internet possible by removing annoyances
 
 Tested on:
 - Chromium based browsers for Android 12L (Good luck with this after the transition to Manifest V3 in January 2024)
