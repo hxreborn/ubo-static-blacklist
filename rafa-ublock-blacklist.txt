@@ -5,29 +5,30 @@
 ! 2022-03-15 https://www.tiendanimal.es
 
 ! Global rules
-##.ad
-##.adx
-##.axds
-##.ads
-##[class^="ad-"]
-##[class^="adv-"]
-##[class^="axds-"]
-##[class$="-ad"]
-##[class$="-adv"]
-##[class$="-axds"]
-##[class*="ad_container"]
-##[class*="ads_container"]
-##[class*="adv_container"]
-##[class*="advertising"]
-##[class$="advertisement"]
-##[class*="adthriove"]
-##[class*="-ad-"]
-##[class*="-ads"]
+! Global rules
+*##.ad
+*##.adx
+*##.axds
+*##.ads
+*##[class^="ad-"]
+*##[class^="adv-"]
+*##[class^="axds-"]
+*##[class$="-ad"]
+*##[class$="-adv"]
+*##[class$="-axds"]
+*##[class*="ad_container"]
+*##[class*="ads_container"]
+*##[class*="adv_container"]
+*##[class*="advertising"]
+*##[class$="advertisement"]
+*##[class*="adthriove"]
+*##[class*="-ad-"]
+*##[class*="-ads"]
 
-##leftSideAd
-##rightSideAd
-##stories_container
-##overlay
+*##leftSideAd
+*##rightSideAd
+*##stories_container
+*##overlay
 
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
