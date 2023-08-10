@@ -2,7 +2,7 @@
 ! Description: Static personal blacklist
 ! Homepage: https://github.com/rafagale/ubo-static-blacklist
 ! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
-! 2022-03-15 https://www.tiendanimal.es
+! allowGenericProceduralFilters must be set to true https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
 
 ! Global rules
 *##.ad
