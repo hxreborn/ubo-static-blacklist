@@ -5,24 +5,25 @@
 ! allowGenericProceduralFilters must be set to true https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
 
 ! Global rules
-*##.ad
-*##.adx
-*##.axds
-*##.ads
-*##[class^="ad-"]
-*##[class^="adv-"]
-*##[class^="axds-"]
-*##[class$="-ad"]
-*##[class$="-adv"]
-*##[class$="-axds"]
-*##[class*="ad_container"]
-*##[class*="ads_container"]
-*##[class*="adv_container"]
-*##[class*="advertising"]
-*##[class$="advertisement"]
-*##[class*="adthriove"]
-*##[class*="-ad-"]
-*##[class*="-ads"]
+##.ad
+##.adx
+##.axds
+##.ads
+##.adv
+##[class^="ad-"]
+##[class^="adv-"]
+##[class^="axds-"]
+##[class$="-ad"]
+##[class$="-adv"]
+##[class$="-axds"]
+##[class*="ad_container"]
+##[class*="ads_container"]
+##[class*="adv_container"]
+##[class*="advertising"]
+##[class$="advertisement"]
+##[class*="adthriove"]
+##[class*="-ad-"]
+##[class*="-ads"]
 
 ###leftSideAd
 ###rightSideAd
