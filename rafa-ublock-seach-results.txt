@@ -1,4 +1,4 @@
- Title: uBlock search result filters (rafagale)
+! Title: uBlock search result filters (rafagale)
 ! Description: uBlock search result filters
 ! Homepage: https://github.com/rafagale/ubo-static-blacklist
 ! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
