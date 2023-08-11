@@ -164,10 +164,4 @@ www.pravda.com.ua##.w_banner
 ##.prometeoArticleBottom
 
 
-www.google.*##.g:has(a[href*=".softonic."])
-www.google.*##a[href*=".softonic."]:upward(1)
-duckduckgo.com##a[data-testid="result-title-a"][href*=".softonic."]:upward(.nrn-react-div)
-duckduckgo.com##.tile-wrap a[href*=".softonic."]:upward(.tile)
-startpage.com##a[data-testid="result-title-a"][href*=".softonic."]:upward(.nrn-react-div)
-startpage.com##.tile-wrap a[href*=".softonic."]:upward(.tile)
 
