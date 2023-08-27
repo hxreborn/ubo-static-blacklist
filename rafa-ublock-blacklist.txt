@@ -24,6 +24,7 @@
 ##[class*="adthriove"]
 ##[class*="-ad-"]
 ##[class*="-ads"]
+##.outpost-pub-container
 
 ###leftSideAd
 ###rightSideAd
