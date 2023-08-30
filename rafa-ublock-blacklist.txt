@@ -164,5 +164,79 @@ www.pravda.com.ua##.nts-ad-h280.nts-ad
 www.pravda.com.ua##.w_banner
 ##.prometeoArticleBottom
 
+¡
+! 2023-05-22 https://www.20minutos.es
+www.20minutos.es##.container > .axds
+
+! 2023-06-03 https://www.heraldo.es
+www.heraldo.es##.prometeoArticleBottom
+www.heraldo.es###breaking_hack_origin
+www.heraldo.es##.trk-bloque1.board-template
+www.heraldo.es###ui-userbox
+
+! 2023-06-11 https://www.eldiario.es
+www.eldiario.es##.bannerTop
+
+! 2023-06-20 https://www.hosteltur.com
+
+! 2023-06-23 https://reason.com
+reason.com##.aspect-holder
+
+! 2023-06-24 https://abcnews.go.com
+abcnews.go.com##div.zhVl.eXZc.oJhu.gfNz.oMlS.kRoB.roDb.gbbf.OnRT.vrZx.ONJd.iSha.jaoD.GQmd.SVqK.eQqc.OjMN.hbvn.aHUB.lzDC.zzsc.NIuq.iulO.VvTx.xegr.SmBj.mEee.MCnQ.nFwa.BZyg.acPP.eRft.sKyC.ISNQ.daRV.AkFW.OsTs.zNYg.vPlO.EhJP.pvsT.QBoF.QrHM.oLzS > div
+
+! 2023-06-28 https://blogs.nationapk.com
+blogs.nationapk.com##.adbs
+blogs.nationapk.com##.adb
+
+! 2023-06-29 https://informaciongastronomica.com
+informaciongastronomica.com##div.double_banner_container:nth-of-type(1)
+informaciongastronomica.com##div.double_banner_container:nth-of-type(2)
+
+! 2023-07-04 https://www.culturaocio.com
+www.culturaocio.com##.adv-container.centrado
+
+! 2023-07-16 https://cincodias.elpais.com
+cincodias.elpais.com##.b5epfjsgumhf
+
+! 2023-07-23 https://www.abc.es
+www.abc.es##[href="https://tienda.abc.es/suscripcion/h6x1-elecc28m23-on-1m-cap-abc.html#vca=h6x1-elecc28m23-on-1m-cap-abc&vso=abc&vmc=on&vli=cabecera-a"]
+www.abc.es##.v-adv--bg.v-adv--f.v-adv
+www.abc.es##.v-adv--rb.v-adv
+www.abc.es##.voc-premium
+
+! 2023-07-23 https://www.tomatazos.com
+www.tomatazos.com##.\31 zqyoy9qkbbz
+
+! 2023-07-27 https://www.xataka.com
+www.xataka.com###stories_container
+
+! 2023-08-01 https://www.quora.com
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+
+! 2023-08-04 https://www.cerler.com
+||aramon.com/estaticos/userfiles/image/telesilla-sup-20072022.jpg$image
+
+
+! 2023-08-04 https://www.startpage.com
+www.startpage.com##.css-fu0ikb.top-attribution
+www.startpage.com##.css-h8ij77.ay-bg-container
+
+! 2023-08-06 https://www.eldiario.es
+www.eldiario.es##.become-partner
+
+! 2023-08-09 https://www.elplural.com
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner:nth-of-type(4)
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner
+
+! 2023-08-09 https://www.lasexta.com
+www.lasexta.com##.sc-bxs.adv
+
+! 2023-08-09 https://www.nationalgeographic.com.es
+www.nationalgeographic.com.es##.default.button-suscription
+www.nationalgeographic.com.es##.ad-inline.publi-interior-top.add300x250
+
+
 
 
