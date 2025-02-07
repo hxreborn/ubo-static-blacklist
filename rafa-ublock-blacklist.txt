@@ -1,104 +1,289 @@
-! Title: uBlock filters – Static annoyances (rafagale)
-! Description: Static personal blacklist
+! Title: uBlock Filters – Static Mobile Annoyances
+! Description: Personal blacklist for cosmetic filtering
 ! Homepage: https://github.com/rafagale/ubo-static-blacklist
 ! Forums: https://github.com/rafagale/ubo-static-blacklist/issues
 ! allowGenericProceduralFilters must be set to true https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
+! Last Updated: 2025-02-07
 
-! Global rules
-##.ad
-##.adx
-##.axds
-##.ads
-##.adv
-##[class^="ad-"]
-##[class^="adv-"]
-##[class^="axds-"]
-##[class$="-ad"]
-##[class$="-adv"]
-##[class$="-axds"]
-##[class*="ad_container"]
-##[class*="ads_container"]
-##[class*="adv_container"]
-##[class*="advertising"]
-##[class$="advertisement"]
-##[class*="adthriove"]
-##[class*="-ad-"]
-##[class*="-ads"]
-##.outpost-pub-container
-##.donate
-###leftSideAd
-###rightSideAd
-###stories_container
+!! ==========================
+! 🌍 Global Cosmetic Filters
+! ==========================
+
+*##.ad
+*##.ad-container
+*##.ad-unit
+*##.ad-wrapper
+*##.ads
+*##.adx
+*##.adv
+*##.adv-container
+*##.adv-inline
+*##.advert
+*##.advert-container
+*##.advert-content
+*##.advertisement
+*##.advertisement-container
+*##.advertising
+*##.axds
+*##.banner-ad
+*##.banner-adv
+*##.banner-advertisement
+*##.commercial-banner
+*##.content-ad
+*##.display-ad
+*##.footer-ad
+*##.header-ad
+*##.in-article-ad
+*##.inline-ad
+*##.interstitial-ad
+*##.leaderboard-ad
+*##.left-ad
+*##.mid-banner-ad
+*##.midpage-ad
+*##.native-ad
+*##.promo-ad
+*##.promotional-ad
+*##.right-ad
+*##.sidebar-ad
+*##.sponsor
+*##.sponsored
+*##.sponsored-content
+*##.sponsored-post
+*##.top-banner-ad
+*##.widget-ad
+*##.widget-advert
+*##.widget-advise-bottom
+*##[id^="ad"]
+*##[id^="ads"]
+*##[id^="adv"]
+*##[id^="adx"]
+*##[id^="axds"]
+*##[id^="advert"]
+*##[id^="advertising"]
+*##[id^="banner"]
+*##[id^="content-ad"]
+*##[id^="display-ad"]
+*##[id^="footer-ad"]
+*##[id^="header-ad"]
+*##[id^="leaderboard-ad"]
+*##[id^="native-ad"]
+*##[id^="promo"]
+*##[id^="promotional"]
+*##[id^="right-ad"]
+*##[id^="sponsor"]
+*##[id^="sponsored"]
+*##[id^="top-banner-ad"]
+*##[id^="widget-ad"]
+###ad
+###ad-banner
+###ad-container
+###ad-label
+###ad-slot
+###ad-space
+###advert
+###advertisement
+###advertising
+###banner-ad
+###dfp-ad
+###floating-ad
+###header-ad
+###leaderboard-ad
+###mid-ad
 ###overlay
+###popup-ad
+###right-ad
+###side-ad
+###sponsor
+###sponsored
+###stories_container
+###top-ad
+###top-banner-ad
+###widget-advise-bottom
+
+
+! ==========================
+! 🌍 Domain-Specific Rules
+! ==========================
+! 2023-05-09 https://www.pravda.com.ua
+www.pravda.com.ua##.nts-ad-h280.nts-ad
+www.pravda.com.ua##.w_banner
+
+! 2023-05-22 https://www.20minutos.es
+www.20minutos.es##.container > .axds
+
+! 2023-06-03 https://www.heraldo.es
+www.heraldo.es##.prometeoArticleBottom
+www.heraldo.es###breaking_hack_origin
+www.heraldo.es##.trk-bloque1.board-template
+www.heraldo.es###ui-userbox
+
+! 2023-06-11 https://www.eldiario.es
+www.eldiario.es##.bannerTop
+
+! 2023-06-20 https://www.hosteltur.com
+
+! 2023-06-23 https://reason.com
+reason.com##.aspect-holder
+
+! 2023-06-24 https://abcnews.go.com
+abcnews.go.com##div.zhVl.eXZc.oJhu.gfNz.oMlS.kRoB.roDb.gbbf.OnRT.vrZx.ONJd.iSha.jaoD.GQmd.SVqK.eQqc.OjMN.hbvn.aHUB.lzDC.zzsc.NIuq.iulO.VvTx.xegr.SmBj.mEee.MCnQ.nFwa.BZyg.acPP.eRft.sKyC.ISNQ.daRV.AkFW.OsTs.zNYg.vPlO.EhJP.pvsT.QBoF.QrHM.oLzS > div
+
+! 2023-06-28 https://blogs.nationapk.com
+blogs.nationapk.com##.adbs
+blogs.nationapk.com##.adb
+
+! 2023-06-29 https://informaciongastronomica.com
+informaciongastronomica.com##div.double_banner_container:nth-of-type(1)
+informaciongastronomica.com##div.double_banner_container:nth-of-type(2)
+
+! 2023-07-04 https://www.culturaocio.com
+www.culturaocio.com##.adv-container.centrado
+
+! 2023-07-16 https://cincodias.elpais.com
+cincodias.elpais.com##.b5epfjsgumhf
+
+! 2023-07-23 https://www.abc.es
+www.abc.es##[href="https://tienda.abc.es/suscripcion/h6x1-elecc28m23-on-1m-cap-abc.html#vca=h6x1-elecc28m23-on-1m-cap-abc&vso=abc&vmc=on&vli=cabecera-a"]
+www.abc.es##.v-adv--bg.v-adv--f.v-adv
+www.abc.es##.v-adv--rb.v-adv
+www.abc.es##.voc-premium
+
+! 2023-07-23 https://www.tomatazos.com
+www.tomatazos.com##.\31 zqyoy9qkbbz
+
+! 2023-07-27 https://www.xataka.com
+www.xataka.com###stories_container
+
+! 2023-08-01 https://www.quora.com
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+
+! 2023-08-04 https://www.cerler.com
+||aramon.com/estaticos/userfiles/image/telesilla-sup-20072022.jpg$image
+
+
+! 2023-08-04 https://www.startpage.com
+www.startpage.com##.css-fu0ikb.top-attribution
+www.startpage.com##.css-h8ij77.ay-bg-container
+
+! 2023-08-06 https://www.eldiario.es
+www.eldiario.es##.become-partner
+
+! 2023-08-09 https://www.elplural.com
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner:nth-of-type(4)
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner
+
+! 2023-08-09 https://www.lasexta.com
+www.lasexta.com##.sc-bxs.adv
+
+! 2023-08-09 https://www.nationalgeographic.com.es
+www.nationalgeographic.com.es##.default.button-suscription
+www.nationalgeographic.com.es##.ad-inline.publi-interior-top.add300x250
 
 
 www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
 ! 2022-03-15 https://forum.xda-developers.com
+
 forum.xda-developers.com###xdadevelopers_leaderboard_atf
 ! 2022-03-17 https://www.theverge.com
+
 www.theverge.com##.remixd-wrapper
 ! 2022-03-17 https://elchapuzasinformatico.com
 ||elchapuzasinformatico.com/wp-content/uploads/2022/01/B4nner-MSI-Intel-Z690.jpg$image
 ! 2022-03-19 https://www.heraldo.es
+
 www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+
 www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon
+
 www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+
 www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon
+
 www.heraldo.es##.contenido-suscripcion.titleIcon
+
 www.heraldo.es##.top_ads_container
+
 www.heraldo.es##[href^="https://tienda.heraldo.es/suscripcion-digital"]
 www.heraldo.es##.btn-suscripcion
+
 www.heraldo.es##.contenido-suscripcion-content
 ! 2022-03-20 https://www.elperiodicodearagon.com
+
 www.elperiodicodearagon.com##a.btn-header-premium > span
+
 www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
+
 www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+
 www.elperiodicodearagon.com##.commercial-up-full__wrapper
+
 www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
+
 www.elperiodicodearagon.com##._mo_recs
 ! 2022-03-22 https://www.heraldo.es
 ||imagenes.heraldo.es/files/image_654_v1/files/fp/uploads/imagenes/2022/03/16/consigue-tu-suscripcion-digital-por-1-euro-durante-tres-meses-y-renueva-a-mitad-de-precio.r_d.600-400-0.jpeg$image
+
 www.elperiodicodearagon.com##.sponsorship
 ! 2022-03-22 https://www.ecosia.org
-ecosia.org##[data-test-id="ad-block-notice"]
-! 2022-03-26 https://computerhoy.com
+
+ecosia.org##[data-test-id="ad-block-notice"]! 2022-03-26 https://computerhoy.com
+
 computerhoy.com##.wrapper_roba_1
+
 computerhoy.com##.wrapper_roba_outstream
 ! 2022-03-26 https://www.elespanol.com
+
 www.elespanol.com##.article-adv--header.article-adv
+
 www.elespanol.com###article-body-content > .article-body__adv--gpt.article-body__adv
+
 www.elespanol.com##.article-inline
+
 www.elespanol.com##.article-media__caption > .article-body__adv--gpt.article-body__adv
+
 www.elespanol.com###link_bar_top_user_area
+
 www.elespanol.com##.adv_inline
+
 www.elespanol.com##.article-inline_final
+
 www.elespanol.com##.article-adv__content
+
 www.elespanol.com##.article-adv--sidebar.article-adv
 ! 2022-03-30 https://www.elperiodicodearagon.com
+
 www.elperiodicodearagon.com##.sponsorship
 ! 2022-04-06 https://www.heraldo.es
 ||imagenes.heraldo.es/files/image_486_273/files/fp/uploads/imagenes/2022/04/01/suscribete-y-comienza-a-leer-sin-limite.r_d.282-391-0.jpeg$image
 ! 2022-04-12 https://www.rockmods.net
+
 www.rockmods.net##.isiAds
+
 www.rockmods.net###ignielAdBlock
 ! 2022-04-13 https://amazfitwatchfaces.com
+
 amazfitwatchfaces.com##.growl-large.growl-notice.growl
+
 amazfitwatchfaces.com##.growl-medium.growl-error.growl
 ! 2022-04-13 https://www.elgoldigital.com
+
 www.elgoldigital.com##.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
-! 2022-04-28 https://www.elgoldigital.com
+\! 2022-04-28 https://www.elgoldigital.com
+
 www.elgoldigital.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
 ! 2022-05-03 https://www.cinemascomics.com
+
 www.cinemascomics.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
 ! 2022-05-03 https://www.majorcadailybulletin.com
+
 www.majorcadailybulletin.com##.main .right.yield.banner
 ! 2022-07-04 https://www.elconfidencial.com
 www.elconfidencial.com##.news-body-complete.newsType__content > .revUnit--placeholder.revUnit
 ! 2022-07-27 https://www.elperiodicodearagon.com
 ||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
 ! 2022-07-30 https://www.kimovil.com
-www.kimovil.com##div.kau:nth-of-type(3)
-! 2022-07-31 https://computerhoy.com
+www.kimovil.com##div.kau:nth-of-type(3)! 2022-07-31 https://computerhoy.com
 computerhoy.com##.roba_2.dfp-position
 computerhoy.com##.wrapper_roba_2
 ! 2022-08-01 https://www.elperiodicomediterraneo.com
@@ -108,8 +293,7 @@ computerhoy.com##.wrapper_roba_2
 www.lavanguardia.com##.in.ev-open-modal-paywall-REQUIRE_LOGIN_WITH_ENTITLEMENT.ev.fade.show.modal
 www.lavanguardia.com###gg-alert-body
 ! 2022-08-03 https://areajugones.sport.es
-areajugones.sport.es##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(1)
-! 2022-08-11 https://www.elperiodicomediterraneo.com
+areajugones.sport.es##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(1)! 2022-08-11 https://www.elperiodicomediterraneo.com
 www.elperiodicomediterraneo.com##div.bbnx-module > div.ad-container > .ad-signature
 ! 2022-08-18 https://www.elconfidencial.com
 www.elconfidencial.com##.skinRevenue
@@ -118,63 +302,140 @@ www.elperiodicodearagon.com##div.bbnx-module > div.ad-container > .ad-signature
 youtube.com##[page-subtype="home"] [is-shorts]
 ! 2023-02-11 https://www.bizizaragoza.com
 www.bizizaragoza.com###overlay
+
 ! 2023-03-06 https://andro4all.com
 andro4all.com##.ad-div
 ! 2023-03-08 https://www.applesfera.com
 www.applesfera.com##.ad
 www.applesfera.com###stories_container
-! 2023-05-09 https://www.pravda.com.ua
-www.pravda.com.ua##.nts-ad-h280.nts-ad
-www.pravda.com.ua##.w_banner
+
 ##.prometeoArticleBottom
-! 2023-05-22 https://www.20minutos.es
-www.20minutos.es##.container > .axds
-! 2023-06-03 https://www.heraldo.es
-www.heraldo.es##.prometeoArticleBottom
-www.heraldo.es###breaking_hack_origin
-www.heraldo.es##.trk-bloque1.board-template
-www.heraldo.es###ui-userbox
-! 2023-06-11 https://www.eldiario.es
-www.eldiario.es##.bannerTop
-! 2023-06-20 https://www.hosteltur.com
-! 2023-06-23 https://reason.com
-reason.com##.aspect-holder
-! 2023-06-24 https://abcnews.go.com
-abcnews.go.com##div.zhVl.eXZc.oJhu.gfNz.oMlS.kRoB.roDb.gbbf.OnRT.vrZx.ONJd.iSha.jaoD.GQmd.SVqK.eQqc.OjMN.hbvn.aHUB.lzDC.zzsc.NIuq.iulO.VvTx.xegr.SmBj.mEee.MCnQ.nFwa.BZyg.acPP.eRft.sKyC.ISNQ.daRV.AkFW.OsTs.zNYg.vPlO.EhJP.pvsT.QBoF.QrHM.oLzS > div
-! 2023-06-28 https://blogs.nationapk.com
-blogs.nationapk.com##.adbs
-blogs.nationapk.com##.adb
-! 2023-06-29 https://informaciongastronomica.com
-informaciongastronomica.com##div.double_banner_container:nth-of-type(1)
-informaciongastronomica.com##div.double_banner_container:nth-of-type(2)
-! 2023-07-04 https://www.culturaocio.com
-www.culturaocio.com##.adv-container.centrado
-! 2023-07-16 https://cincodias.elpais.com
-cincodias.elpais.com##.b5epfjsgumhf
-! 2023-07-23 https://www.abc.es
-www.abc.es##[href="https://tienda.abc.es/suscripcion/h6x1-elecc28m23-on-1m-cap-abc.html#vca=h6x1-elecc28m23-on-1m-cap-abc&vso=abc&vmc=on&vli=cabecera-a"]
-www.abc.es##.v-adv--bg.v-adv--f.v-adv
-www.abc.es##.v-adv--rb.v-adv
-www.abc.es##.voc-premium
-! 2023-07-23 https://www.tomatazos.com
-www.tomatazos.com##.\31 zqyoy9qkbbz
-! 2023-07-27 https://www.xataka.com
-www.xataka.com###stories_container
-! 2023-08-01 https://www.quora.com
-||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
-||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
-! 2023-08-04 https://www.cerler.com
-||aramon.com/estaticos/userfiles/image/telesilla-sup-20072022.jpg$image
-! 2023-08-04 https://www.startpage.com
-www.startpage.com##.css-fu0ikb.top-attribution
-www.startpage.com##.css-h8ij77.ay-bg-container
-! 2023-08-06 https://www.eldiario.es
-www.eldiario.es##.become-partner
-! 2023-08-09 https://www.elplural.com
-www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner:nth-of-type(4)
-www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner
-! 2023-08-09 https://www.lasexta.com
-www.lasexta.com##.sc-bxs.adv
-! 2023-08-09 https://www.nationalgeographic.com.es
-www.nationalgeographic.com.es##.default.button-suscription
-www.nationalgeographic.com.es##.ad-inline.publi-interior-top.add300x250
+
+www.google.*##.g:has(a[href*=".softonic."])
+www.google.*##a[href*=".softonic."]:upward(1)
+duckduckgo.com##a[data-testid="result-title-a"][href*=".softonic."]:upward(.nrn-react-div)
+duckduckgo.com##.tile-wrap a[href*=".softonic."]:upward(.tile)
+
+! 2023-08-10 https://www.nationalgeographic.com.es
+www.nationalgeographic.com.es##.ad-container-r1.add300x600.ad-item.stickied
+www.nationalgeographic.com.es##[href] > .claim
+
+! 2023-08-14 https://www.diariodeteruel.es
+www.diariodeteruel.es##.relative.left.mvp-feat1-list-ad
+
+! 2023-08-29 https://m.facebook.com
+||scontent-mad1-1.xx.fbcdn.net/v/t15.5256-10/370358254_684317270287103_1941146488224906503_n.jpg?stp=dst-jpg_e15_q60_s1440x810_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_ht=scontent-mad1-1.xx&_nc_cat=105&_nc_ohc=br6BvzVaFygAX_Dvtxg&ccb=1-7&_nc_sid=ad6a45&oh=00_AfCqffiMuoimof4F7clOkbUQGidTZRTaDIQnFjkz8E8M6A&oe=64F324D3$image
+
+! 2023-09-12 https://www.menshealth.com
+www.menshealth.com##.e1c1bym14.css-ae3tru
+www.menshealth.com##.e7dmux21.css-as13vj
+www.menshealth.com##.eg8z2o92.css-hi6ssp
+
+! 2023-09-14 https://alexgallacher.com
+alexgallacher.com##.gh-portal-triggerbtn-iframe
+
+! 2023-11-04 https://www.elperiodicodearagon.com
+www.elperiodicodearagon.com##._mo_recs_cti
+www.elperiodicodearagon.com##._mo_recs_vi
+
+! 2023-11-08 https://www.pccomponentes.com
+www.pccomponentes.com###pcc-main-accesory-at
+www.pccomponentes.com###pcc-recommender-cross-selling
+
+! 2023-11-15 https://parcelsapp.com
+parcelsapp.com##body > div
+
+! 2023-11-21 https://handledeck.com
+handledeck.com##div > ins
+handledeck.com##body > div > div > div > div > div > div
+handledeck.com##body > div > div > div > div > div
+
+! 2023-11-26 https://handledeck.com
+handledeck.com##.cmplz-video.cmplz-iframe-styles.cmplz-iframe
+handledeck.com##.ast-oembed-container
+||handledeck.com/wp-content/uploads/2022/11/seguir.webp$image
+||handledeck.com/wp-content/uploads/2022/11/seguir.webp$image
+||handledeck.com/wp-content/uploads/2022/09/accesorios-2-1.webp$image
+
+! 2023-11-29 https://www.elplural.com
+www.elplural.com##.c-banner__mobile.c-banner__300x300.c-banner
+
+! 2023-11-30 https://www.thejc.com
+www.thejc.com##.reminder__mobile > .reminder__header
+
+! 2023-12-01 https://www.gamingonlinux.com
+www.gamingonlinux.com##.announce.group.body
+www.gamingonlinux.com##.affiliate_meta.box
+||uploads.golmedia.net/thunderbirdsponsor.png$image
+www.gamingonlinux.com##div.box:nth-of-type(4)
+
+! 2023-12-17 https://elpais.com
+elpais.com##._g-o.al
+
+! 2023-12-24 https://maxroll.gg
+maxroll.gg##.px-5.py-10.justify-center.items-center.flex-col.flex
+maxroll.gg##.z-\[100000\].bg-opacity-80.bg-dark-1.overflow-y-auto.w-full.h-full.inset-0.fixed
+maxroll.gg##.uppercase.gap-1.right-6.top-3.absolute._button_18lwa_1
+
+! 2023-12-24 https://handledeck.com
+handledeck.com##span > span > div
+handledeck.com##body > section span
+
+! 2024-01-20 https://www.avpasion.com
+www.avpasion.com##.avp-block-1.avp-block
+www.avpasion.com##.avp-block-2.avp-block
+www.avpasion.com##.avp-block-3.avp-block
+www.avpasion.com##.avp-block-4.avp-block
+www.avpasion.com###ssm_leaderboard_article
+
+! 2024-01-27 https://www.ecartelera.com
+www.ecartelera.com##div.pub-box-text:nth-of-type(15)
+
+! 2024-01-31 https://www.ondacero.es
+www.ondacero.es###roba2-720
+
+! 2024-03-22 https://www.elperiodicodearagon.com
+www.elperiodicodearagon.com##._mo_recs_tpi
+
+! 11 Jul 2024 https://www.soydezaragoza.es
+www.soydezaragoza.es##.tagdiv-type.td-post-content > a[href="https://www.soydezaragoza.es/oferta-pulsera-parque-atracciones/"]
+
+! 25 Jul 2024 https://edatv.news
+edatv.news##.stickyFooterContainer
+
+! 5 Aug 2024 https://www.debugpoint.com
+www.debugpoint.com##.g8f705hvu3ng
+www.debugpoint.com##.au04mc70vz
+
+! 20 Oct 2024 https://www.heraldo.es
+||dkumiip2e9ary.cloudfront.net/widgets/hipatia/heraldo/32883/martin_mobile.png$image
+
+! 2 Nov 2024 https://handledeck.com
+handledeck.com##span > div
+||handledeck.com/wp-content/uploads/2023/06/09s8h9ccq73a1.gif$image
+handledeck.com##body > div > div > div > div > span
+handledeck.com##section > p
+handledeck.com##p > section
+
+! 3 Nov 2024 https://handledeck.com
+||handledeck.com/wp-content/uploads/2023/12/banner-camiseta.webp$image
+
+! 16 dic 2024 https://www.reddit.com
+www.reddit.com##xpromo-viral-community
+www.reddit.com###main-content > .absolute
+
+! 19 dic 2024 https://www.diariodenavarra.es
+www.diariodenavarra.es##.con.center > .susc
+
+! 19 dic 2024 https://www.lasexta.com
+www.lasexta.com##.article-main__social-embed
+
+! 4 ene 2025 https://www.movistar.es
+||ssr.col.movistar.es/api/v3/get-pic/content/dam/movistar/television/card-4-3/apple-tv-plus-wolfs.*oe=jpg&hash=env-m4v2v01s$image
+www.movistar.es##.fullOpacity.oneTrustCookie.jsx-1685577655
+
+! 17 ene 2025 https://www.aragondigital.es
+www.aragondigital.es##.widget-advise-bottom
+
+! 5 feb 2025 https://e-noticies.cat
+e-noticies.cat##.lazyloading.social-embed
