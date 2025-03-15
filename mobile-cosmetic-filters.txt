@@ -1,0 +1,261 @@
+! Title: uBlock Filters – Mobile Annoyances
+! Description: Personal blacklist for cosmetic filtering on mobile devices.
+! Homepage: https://github.com/rafareborn/ubo-static-blacklist
+! Forums: https://github.com/rafareborn/ubo-static-blacklist/issues
+! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
+! Last Updated: 2025-03-15
+!! ==========================
+!! 🌍 Mobile-Specific Cosmetic Filters
+!! ==========================
+###ad
+###ad-banner
+###ad-container
+###ad-label
+###ad-slot
+###ad-space
+###advert
+###advertisement
+###advertising
+###banner-ad
+###dfp-ad
+###floating-ad
+###header-ad
+###leaderboard-ad
+###mid-ad
+###overlay
+###popup-ad
+###right-ad
+###side-ad
+###sponsor
+###sponsored
+###stories_container
+###top-ad
+###top-banner-ad
+###widget-advise-bottom
+##.prometeoArticleBottom
+*##.ad
+*##.ad-container
+*##.ad-unit
+*##.ad-wrapper
+*##.ads
+*##.adv
+*##.adv-container
+*##.adv-inline
+*##.advert
+*##.advert-container
+*##.advert-content
+*##.advertisement
+*##.advertisement-container
+*##.advertising
+*##.adx
+*##.axds
+*##.banner-ad
+*##.banner-adv
+*##.banner-advertisement
+*##.commercial-banner
+*##.content-ad
+*##.display-ad
+*##.footer-ad
+*##.header-ad
+*##.in-article-ad
+*##.inline-ad
+*##.interstitial-ad
+*##.leaderboard-ad
+*##.left-ad
+*##.mid-banner-ad
+*##.midpage-ad
+*##.native-ad
+*##.promo-ad
+*##.promotional-ad
+*##.right-ad
+*##.sidebar-ad
+*##.sponsor
+*##.sponsored
+*##.sponsored-content
+*##.sponsored-post
+*##.top-banner-ad
+*##.widget-ad
+*##.widget-advert
+*##.widget-advise-bottom
+*##[id^="ad"]
+*##[id^="ads"]
+*##[id^="adv"]
+*##[id^="advert"]
+*##[id^="advertising"]
+*##[id^="adx"]
+*##[id^="axds"]
+*##[id^="banner"]
+*##[id^="content-ad"]
+*##[id^="display-ad"]
+*##[id^="footer-ad"]
+*##[id^="header-ad"]
+*##[id^="leaderboard-ad"]
+*##[id^="native-ad"]
+*##[id^="promo"]
+*##[id^="promotional"]
+*##[id^="right-ad"]
+*##[id^="sponsor"]
+*##[id^="sponsored"]
+*##[id^="top-banner-ad"]
+*##[id^="widget-ad"]
+! ==========================
+! 🌍 Mobile Domain-Specific Rules
+! ==========================
+abcnews.go.com##div.zhVl.eXZc.oJhu.gfNz.oMlS.kRoB.roDb.gbbf.OnRT.vrZx.ONJd.iSha.jaoD.GQmd.SVqK.eQqc.OjMN.hbvn.aHUB.lzDC.zzsc.NIuq.iulO.VvTx.xegr.SmBj.mEee.MCnQ.nFwa.BZyg.acPP.eRft.sKyC.ISNQ.daRV.AkFW.OsTs.zNYg.vPlO.EhJP.pvsT.QBoF.QrHM.oLzS > div
+alexgallacher.com##.gh-portal-triggerbtn-iframe
+amazfitwatchfaces.com##.growl-large.growl-notice.growl
+amazfitwatchfaces.com##.growl-medium.growl-error.growl
+andro4all.com##.ad-div
+areajugones.sport.es##div.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper:nth-of-type(1)! 2022-08-11 https://www.elperiodicomediterraneo.com
+blogs.nationapk.com##.adb
+blogs.nationapk.com##.adbs
+cincodias.elpais.com##.b5epfjsgumhf
+computerhoy.com##.roba_2.dfp-position
+computerhoy.com##.wrapper_roba_1
+computerhoy.com##.wrapper_roba_2
+computerhoy.com##.wrapper_roba_outstream
+duckduckgo.com##.tile-wrap a[href*=".softonic."]:upward(.tile)
+duckduckgo.com##a[data-testid="result-title-a"][href*=".softonic."]:upward(.nrn-react-div)
+e-noticies.cat##.lazyloading.social-embed
+ecosia.org##[data-test-id="ad-block-notice"]! 2022-03-26 https://computerhoy.com
+edatv.news##.stickyFooterContainer
+elpais.com##._g-o.al
+forum.xda-developers.com###xdadevelopers_leaderboard_atf
+handledeck.com##.ast-oembed-container
+handledeck.com##.cmplz-video.cmplz-iframe-styles.cmplz-iframe
+handledeck.com##body > div > div > div > div > div
+handledeck.com##body > div > div > div > div > div > div
+handledeck.com##body > div > div > div > div > span
+handledeck.com##body > section span
+handledeck.com##div > ins
+handledeck.com##p > section
+handledeck.com##section > p
+handledeck.com##span > div
+handledeck.com##span > span > div
+informaciongastronomica.com##div.double_banner_container:nth-of-type(1)
+informaciongastronomica.com##div.double_banner_container:nth-of-type(2)
+maxroll.gg##.px-5.py-10.justify-center.items-center.flex-col.flex
+maxroll.gg##.uppercase.gap-1.right-6.top-3.absolute._button_18lwa_1
+maxroll.gg##.z-\[100000\].bg-opacity-80.bg-dark-1.overflow-y-auto.w-full.h-full.inset-0.fixed
+parcelsapp.com##body > div
+reason.com##.aspect-holder
+www.20minutos.es##.container > .axds
+www.abc.es##.v-adv--bg.v-adv--f.v-adv
+www.abc.es##.v-adv--rb.v-adv
+www.abc.es##.voc-premium
+www.abc.es##[href="https://tienda.abc.es/suscripcion/h6x1-elecc28m23-on-1m-cap-abc.html#vca=h6x1-elecc28m23-on-1m-cap-abc&vso=abc&vmc=on&vli=cabecera-a"]
+www.applesfera.com###stories_container
+www.applesfera.com##.ad
+www.aragondigital.es##.widget-advise-bottom
+www.avpasion.com###ssm_leaderboard_article
+www.avpasion.com##.avp-block-1.avp-block
+www.avpasion.com##.avp-block-2.avp-block
+www.avpasion.com##.avp-block-3.avp-block
+www.avpasion.com##.avp-block-4.avp-block
+www.bizizaragoza.com###overlay
+www.cinemascomics.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+www.culturaocio.com##.adv-container.centrado
+www.debugpoint.com##.au04mc70vz
+www.debugpoint.com##.g8f705hvu3ng
+www.diariodenavarra.es##.con.center > .susc
+www.diariodeteruel.es##.relative.left.mvp-feat1-list-ad
+www.ecartelera.com##div.pub-box-text:nth-of-type(15)
+www.elconfidencial.com##.news-body-complete.newsType__content > .revUnit--placeholder.revUnit
+www.elconfidencial.com##.skinRevenue
+www.eldiario.es##.bannerTop
+www.eldiario.es##.become-partner
+www.elespanol.com###article-body-content > .article-body__adv--gpt.article-body__adv
+www.elespanol.com###link_bar_top_user_area
+www.elespanol.com##.adv_inline
+www.elespanol.com##.article-adv--header.article-adv
+www.elespanol.com##.article-adv--sidebar.article-adv
+www.elespanol.com##.article-adv__content
+www.elespanol.com##.article-inline
+www.elespanol.com##.article-inline_final
+www.elespanol.com##.article-media__caption > .article-body__adv--gpt.article-body__adv
+www.elgoldigital.com##.mrf-heightLocked.mrf-adv__wrapper--framed.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+www.elgoldigital.com##div.mrf-heightLocked.mrf-adv__wrapper--placeholder.mrf-adv__wrapper
+www.elperiodicodearagon.com##._mo_recs
+www.elperiodicodearagon.com##._mo_recs_cti
+www.elperiodicodearagon.com##._mo_recs_tpi
+www.elperiodicodearagon.com##._mo_recs_vi
+www.elperiodicodearagon.com##.commercial-up-full__wrapper
+www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
+www.elperiodicodearagon.com##.sponsorship
+www.elperiodicodearagon.com##.sponsorship
+www.elperiodicodearagon.com##a.btn-header-premium > span
+www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+www.elperiodicodearagon.com##div.bbnx-module > div.ad-container > .ad-signature
+www.elperiodicodearagon.com##div.col-4.col-xs-12 > .sk--offered-by.sk--bcontent.new > header > .sponsorship
+www.elperiodicomediterraneo.com##div.bbnx-module > div.ad-container > .ad-signature
+www.elplural.com##.c-banner__mobile.c-banner__300x300.c-banner
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner
+www.elplural.com##div.c-banner__mobile.c-banner__300x600.c-banner:nth-of-type(4)
+www.gamingonlinux.com##.affiliate_meta.box
+www.gamingonlinux.com##.announce.group.body
+www.gamingonlinux.com##div.box:nth-of-type(4)
+www.google.*##.g:has(a[href*=".softonic."])
+www.google.*##a[href*=".softonic."]:upward(1)
+www.heraldo.es###breaking_hack_origin
+www.heraldo.es###ui-userbox
+www.heraldo.es##.btn-suscripcion
+www.heraldo.es##.contenido-suscripcion-content
+www.heraldo.es##.contenido-suscripcion.titleIcon
+www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon
+www.heraldo.es##.left-noticia > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+www.heraldo.es##.prometeoArticleBottom
+www.heraldo.es##.top_ads_container
+www.heraldo.es##.trk-bloque1.board-template
+www.heraldo.es##[href^="https://tienda.heraldo.es/suscripcion-digital"]
+www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon
+www.heraldo.es##article.noticia_apertura > div > header > h1 > .contenido-suscripcion.titleIcon > .titleIcon-label
+www.kimovil.com##div.kau:nth-of-type(3)! 2022-07-31 https://computerhoy.com
+www.lasexta.com##.article-main__social-embed
+www.lasexta.com##.sc-bxs.adv
+www.lavanguardia.com###gg-alert-body
+www.lavanguardia.com##.in.ev-open-modal-paywall-REQUIRE_LOGIN_WITH_ENTITLEMENT.ev.fade.show.modal
+www.majorcadailybulletin.com##.main .right.yield.banner
+www.menshealth.com##.e1c1bym14.css-ae3tru
+www.menshealth.com##.e7dmux21.css-as13vj
+www.menshealth.com##.eg8z2o92.css-hi6ssp
+www.movistar.es##.fullOpacity.oneTrustCookie.jsx-1685577655
+www.nationalgeographic.com.es##.ad-container-r1.add300x600.ad-item.stickied
+www.nationalgeographic.com.es##.ad-inline.publi-interior-top.add300x250
+www.nationalgeographic.com.es##.default.button-suscription
+www.nationalgeographic.com.es##[href] > .claim
+www.ondacero.es###roba2-720
+www.pccomponentes.com###pcc-main-accesory-at
+www.pccomponentes.com###pcc-recommender-cross-selling
+www.pravda.com.ua##.nts-ad-h280.nts-ad
+www.pravda.com.ua##.w_banner
+www.reddit.com###main-content > .absolute
+www.reddit.com##xpromo-viral-community
+www.rockmods.net###ignielAdBlock
+www.rockmods.net##.isiAds
+www.soydezaragoza.es##.tagdiv-type.td-post-content > a[href="https://www.soydezaragoza.es/oferta-pulsera-parque-atracciones/"]
+www.startpage.com##.css-fu0ikb.top-attribution
+www.startpage.com##.css-h8ij77.ay-bg-container
+www.thejc.com##.reminder__mobile > .reminder__header
+www.theverge.com##.remixd-wrapper
+www.tiendanimal.es##.js-toast_app.toast--show.toast--bottom.bg-lighter.toast
+www.tomatazos.com##.\31 zqyoy9qkbbz
+www.xataka.com###stories_container
+youtube.com##[page-subtype="home"] [is-shorts]
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+||accounts.google.com/gsi/iframe/select?client_id=917071888555.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=bottom_sheet&as=dScWw9DvkaLlcGgOSXWPrA&is_itp=true&channel_id=8d1047b51bac94834ee849fe66f51a47232cbb3b291b142133d3dc3eea78248e&origin=https%3A%2F%2Fwww.quora.com$subdocument
+||aramon.com/estaticos/userfiles/image/telesilla-sup-20072022.jpg$image
+||dkumiip2e9ary.cloudfront.net/widgets/hipatia/heraldo/32883/martin_mobile.png$image
+||elchapuzasinformatico.com/wp-content/uploads/2022/01/B4nner-MSI-Intel-Z690.jpg$image
+||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
+||estaticos-cdn.elperiodicomediterraneo.com/assets/images/advLoading.png$image
+||estaticos-cdn.elperiodicomediterraneo.com/assets/images/advLoading.png$image
+||handledeck.com/wp-content/uploads/2022/09/accesorios-2-1.webp$image
+||handledeck.com/wp-content/uploads/2022/11/seguir.webp$image
+||handledeck.com/wp-content/uploads/2022/11/seguir.webp$image
+||handledeck.com/wp-content/uploads/2023/06/09s8h9ccq73a1.gif$image
+||handledeck.com/wp-content/uploads/2023/12/banner-camiseta.webp$image
+||imagenes.heraldo.es/files/image_486_273/files/fp/uploads/imagenes/2022/04/01/suscribete-y-comienza-a-leer-sin-limite.r_d.282-391-0.jpeg$image
+||imagenes.heraldo.es/files/image_654_v1/files/fp/uploads/imagenes/2022/03/16/consigue-tu-suscripcion-digital-por-1-euro-durante-tres-meses-y-renueva-a-mitad-de-precio.r_d.600-400-0.jpeg$image
+||scontent-mad1-1.xx.fbcdn.net/v/t15.5256-10/370358254_684317270287103_1941146488224906503_n.jpg?stp=dst-jpg_e15_q60_s1440x810_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_ht=scontent-mad1-1.xx&_nc_cat=105&_nc_ohc=br6BvzVaFygAX_Dvtxg&ccb=1-7&_nc_sid=ad6a45&oh=00_AfCqffiMuoimof4F7clOkbUQGidTZRTaDIQnFjkz8E8M6A&oe=64F324D3$image
+||ssr.col.movistar.es/api/v3/get-pic/content/dam/movistar/television/card-4-3/apple-tv-plus-wolfs.*oe=jpg&hash=env-m4v2v01s$image
+||uploads.golmedia.net/thunderbirdsponsor.png$image
