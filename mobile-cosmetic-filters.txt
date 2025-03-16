@@ -94,7 +94,7 @@
 *##[id^="promo"]
 *##[id^="promotional"]
 *##[id^="right-ad"]
-##[id^="sas_"][id$="_mobile"]
+*##[id^="sas_"][id$="_mobile"]
 *##[id^="sponsor"]
 *##[id^="sponsored"]
 *##[id^="top-banner-ad"]
