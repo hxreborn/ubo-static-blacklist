@@ -261,3 +261,4 @@ youtube.com##[page-subtype="home"] [is-shorts]
 ||scontent-mad1-1.xx.fbcdn.net/v/t15.5256-10/370358254_684317270287103_1941146488224906503_n.jpg?stp=dst-jpg_e15_q60_s1440x810_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_ht=scontent-mad1-1.xx&_nc_cat=105&_nc_ohc=br6BvzVaFygAX_Dvtxg&ccb=1-7&_nc_sid=ad6a45&oh=00_AfCqffiMuoimof4F7clOkbUQGidTZRTaDIQnFjkz8E8M6A&oe=64F324D3$image
 ||ssr.col.movistar.es/api/v3/get-pic/content/dam/movistar/television/card-4-3/apple-tv-plus-wolfs.*oe=jpg&hash=env-m4v2v01s$image
 ||uploads.golmedia.net/thunderbirdsponsor.png$image
+||combot.org/COMBOT400.jpg$image
