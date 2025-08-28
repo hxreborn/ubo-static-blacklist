@@ -1,104 +1,86 @@
 ! Title: uBlock Filters – Mobile Annoyances
 ! Description: Personal blacklist for cosmetic filtering on mobile devices.
-! Homepage: https://github.com/rafareborn/ubo-static-blacklist
-! Forums: https://github.com/rafareborn/ubo-static-blacklist/issues
+! Homepage: https://github.com/hexpreso/ubo-static-blacklist
+! Forums: https://github.com/hexpreso/ubo-static-blacklist/issues
 ! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
-! Last Updated: 2025-03-15
+! Last Updated: 2025-08-28
+! Expires: 4 days
+! Version: 2025.08.28.5
+
 !! ==========================
 !! 🌍 Mobile-Specific Cosmetic Filters
 !! ==========================
-###ad
-###ad-banner
-###ad-container
-###ad-label
-###ad-slot
-###ad-space
-###advert
-###advertisement
-###advertising
-###banner-ad
-###dfp-ad
-###floating-ad
-###header-ad
-###leaderboard-ad
-###mid-ad
-###overlay
-###popup-ad
-###right-ad
-###side-ad
-###sponsor
-###sponsored
-###stories_container
-###top-ad
-###top-banner-ad
-###widget-advise-bottom
-##.prometeoArticleBottom
-*##.ad
-*##.ad-container
-*##.ad-unit
-*##.ad-wrapper
-*##.ads
-*##.adv
-*##.adv-container
-*##.adv-inline
-*##.advert
-*##.advert-container
-*##.advert-content
-*##.advertisement
-*##.advertisement-container
-*##.advertising
-*##.adx
-*##.axds
-*##.banner-ad
-*##.banner-adv
-*##.banner-advertisement
-*##.commercial-banner
-*##.content-ad
-*##.display-ad
-*##.footer-ad
-*##.header-ad
-*##.in-article-ad
-*##.inline-ad
-*##.interstitial-ad
-*##.leaderboard-ad
-*##.left-ad
-*##.mid-banner-ad
-*##.midpage-ad
-*##.native-ad
-*##.promo-ad
-*##.promotional-ad
-*##.right-ad
-*##.sidebar-ad
-*##.sponsor
-*##.sponsored
-*##.sponsored-content
-*##.sponsored-post
-*##.top-banner-ad
-*##.widget-ad
-*##.widget-advert
-*##.widget-advise-bottom
-*##[id^="ad"]
-*##[id^="ads"]
-*##[id^="adv"]
-*##[id^="advert"]
-*##[id^="advertising"]
-*##[id^="adx"]
-*##[id^="axds"]
-*##[id^="banner"]
-*##[id^="content-ad"]
-*##[id^="display-ad"]
-*##[id^="footer-ad"]
-*##[id^="header-ad"]
-*##[id^="leaderboard-ad"]
-*##[id^="native-ad"]
-*##[id^="promo"]
-*##[id^="promotional"]
-*##[id^="right-ad"]
-*##[id^="sas_"][id$="_mobile"]
-*##[id^="sponsor"]
-*##[id^="sponsored"]
-*##[id^="top-banner-ad"]
-*##[id^="widget-ad"]
+
+! --- Stable ad attributes (first line of defense) ---
+! google crap and stable ad attributes — the stuff you actually want to kill.
+*##:is(iframe,div)[id^="google_ads_iframe_"]
+*##[data-ad], [data-ad-unit], [data-ad-slot], [data-ad-client], [data-ad-format], [data-ad-type], [data-ad-size], [data-ad-manager-id], [data-ad-targeting]
+*##[data-google-av-ad-format], [data-google-query-id], [data-google-av-cxn]
+*##[aria-label="advertisement" i]
+
+! --- AMP & other garbage (annoying ad tags, can break some AMP pages) ---
+! amp and inner google iframes — ugly, but necessary for coverage.
+*##:is(amp-ad, amp-embed[type="ads"])
+*##iframe[id^="aswift_"]
+*##:where(article,section,aside,div,ins)[data-promoted], :where(article,section,aside,div,ins)[data-sponsored], :where(article,section,aside,div,ins)[data-paid]
+*##[data-commercial-node]
+*##[data-gpt], [data-gpt-slot]
+*##[data-native-ad], [data-native_ad], [data-native-ads], [data-native_ads]
+*##:where(article,section,aside,div,ins)[aria-label="Publicidad" i], :where(article,section,aside,div,ins)[aria-label="Anuncio" i], :where(article,section,aside,div,ins)[aria-label="Anuncios" i], :where(article,section,aside,div,ins)[aria-label="Patrocinado" i]
+*##[data-ads], [data-ads-slot], [data-ads-targeting]
+*##[data-ad-container], [data-ad-module], [data-ad-placeholder]
+*##[data-ad-rendered], [data-ad-loaded]
+*##[data-ad-label], [data-adlabel], [data-ads-label]
+*##:where(article,section,aside,div,ins)[data-label="Publicidad" i], :where(article,section,aside,div,ins)[data-label="Anuncio" i], :where(article,section,aside,div,ins)[data-label="Anuncios" i], :where(article,section,aside,div,ins)[data-label="Patrocinado" i]
+*##:where(article,section,aside,div,ins)[role="complementary"][class~="advert" i]
+
+! --- Vendor / Ad-stack junk (third-party nonsense) ---
+! vendor cruft: Taboola, Outbrain, prebid, yadda yadda — keep these for extra coverage.
+*##:is([class*="adsbygoogle" i], [id*="adsbygoogle" i])
+*##:is([class*="prebid" i], [id*="prebid" i])
+*##:is([class*="dfp" i], [id*="dfp" i])
+*##:is([class*="taboola" i], [id*="taboola" i])
+*##:where(article,section,aside,div,ins):is([class*="trc_" i], [id*="trc_" i])
+*##:is([class*="outbrain" i], [id*="outbrain" i])
+*##:is([class*="criteo" i], [id*="criteo" i])
+*##:is([class*="teads" i], [id*="teads" i])
+*##:is([class*="pubmatic" i], [id*="pubmatic" i])
+*##:is([class*="openx" i], [id*="openx" i])
+*##:is([class*="rubicon" i], [id*="rubicon" i], [class*="magnite" i], [id*="magnite" i])
+*##:is([class*="appnexus" i], [id*="appnexus" i], [class*="adnxs" i], [id*="adnxs" i])
+*##:is([class*="medianet" i], [id*="medianet" i])
+*##:is([class*="apstag" i], [id*="apstag" i])
+*##:is([class*="ezoic" i], [id*="ezoic" i], [class*="adngin" i], [id*="adngin" i])
+*##:is([class*="adthrive" i], [id*="adthrive" i])
+*##:is([class*="mediavine" i], [id*="mediavine" i])
+*##:is([class*="adpushup" i], [id*="adpushup" i])
+*##:is([class*="revcontent" i], [id*="revcontent" i])
+*##:is([class*="plista" i], [id*="plista" i])
+*##:is([class*="zergnet" i], [id*="zergnet" i])
+*##:is([class*="ligatus" i], [id*="ligatus" i])
+*##:is([class*="connatix" i], [id*="connatix" i])
+*##:is([class*="sharethrough" i], [id*="sharethrough" i])
+*##:is([class*="triplelift" i], [id*="triplelift" i])
+*##:is([class*="gumgum" i], [id*="gumgum" i])
+*##:is([class*="mgid" i], [id*="mgid" i])
+*##:is([class*="dianomi" i], [id*="dianomi" i])
+*##:is([class*="powerinbox" i], [id*="powerinbox" i], [class*="jeeng" i], [id*="jeeng" i])
+*##:is([class*="yandex-rtb" i], [id*="yandex-rtb" i], [class*="yandex_rtb" i], [id*="yandex_rtb" i])
+*##:is([class~="adx" i])
+
+! --- Class / ID token rules (last resort) ---
+! bounded token matching only; avoids header/shadow disasters.
+*##:is([class~="ad"], [class~="ads"], [class~="advert"])
+*##:where(article,section,aside,div,ins):is([class^="ad-"], [class$="-ad"], [class*="-ad-"], [class^="ad_"], [class$="_ad"], [class*="_ad_"])
+*##:where(article,section,aside,div,ins):is([id^="ad-"], [id$="-ad"], [id*="-ad-"], [id^="ad_"], [id$="_ad"], [id*="_ad_"])
+
+! --- Promo / Sponsor tokens (scoped; avoid coupon fields) ---
+! promo/sponsor crap — scoped to big containers and skip promo-code fields.
+*##:where(article,section,aside,div,ins):is([class~="promo"], [class~="promoted"], [class~="sponsor"], [class~="sponsored"]):not([class*="code"])
+*##:where(article,section,aside,div,ins):is([class^="promo-"], [class$="-promo"], [class*="-promo-"], [class^="promo_"], [class$="_promo"], [class*="_promo_"]):not([class*="code"])
+*##:where(article,section,aside,div,ins):is([class^="sponsor-"], [class$="-sponsor"], [class*="-sponsor-"], [class^="sponsor_"], [class$="_sponsor"], [class*="_sponsor_"]):not([class*="code"])
+*##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"]):not([id*="code"])
+*##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"]):not([id*="code"])
 
 ! ==========================
 ! 🌍 Mobile Domain-Specific Rules
@@ -183,7 +165,6 @@ www.elperiodicodearagon.com##._mo_recs_tpi
 www.elperiodicodearagon.com##._mo_recs_vi
 www.elperiodicodearagon.com##.commercial-up-full__wrapper
 www.elperiodicodearagon.com##.sk--sponsored-by.sk--bcontent.new--framed.new > header > .sponsorship
-www.elperiodicodearagon.com##.sponsorship
 www.elperiodicodearagon.com##.sponsorship
 www.elperiodicodearagon.com##a.btn-header-premium > span
 www.elperiodicodearagon.com##a.btn-header-premium:nth-of-type(2)||estaticos-cdn.elperiodicodearagon.com/assets/images/advLoading.png$image
