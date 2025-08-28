@@ -1,14 +1,23 @@
 # ubo-static-blacklist
 
-Personal uBlock Origin blacklist of static elements to ~improve browsing~ make browsing the internet possible by removing annoyances
+Personal uBlock Origin filter lists to remove annoyances.
 
-Tested on:
-- Chromium based browsers for Android 12L (Good luck with this after the transition to Manifest V3 in January 2024)
-- Firefox 117
-- Fennec based on Firefox 116 
+## How to use
 
-Requeriments:
--  `allowGenericProceduralFilters` must be set to `true` 
- 
- 
- https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
+1.  In uBlock Origin's settings, go to the "Filter lists" tab.
+2.  Under "Custom", add these URLs:
+    ```
+    https://raw.githubusercontent.com/Rafa2298/ubo-static-blacklist/main/general-cosmeric-search-filters.txt
+    https://raw.githubusercontent.com/Rafa2298/ubo-static-blacklist/main/mobile-cosmetic-filters.txt
+    ```
+3.  Apply changes.
+
+## Important
+
+You need to set `allowGenericProceduralFilters` to `true` in advanced settings for this to work.
+[More info](https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters)
+
+## Compatibility
+
+These lists are tested on recent versions of Firefox and Chrome. Use at your own risk on other browsers.
+The move to Manifest V3 may break things on Chromium browsers in the future.
