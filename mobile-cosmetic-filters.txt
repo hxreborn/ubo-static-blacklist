@@ -82,6 +82,5 @@
 *##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"]):not([id*="code"])
 *##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"]):not([id*="code"])
 
-! ---- Sticky footers / login & signup CTAs ----
-*##:is(footer,div,section,aside)[class*="sticky" i]:matches-css(position:fixed)
-
+! ---- Sticky widget-advise footer ----
+*##:is(footer,div,section,aside)[class*="widget-advise" i]
