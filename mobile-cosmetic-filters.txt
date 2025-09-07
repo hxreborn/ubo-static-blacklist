@@ -81,3 +81,6 @@
 *##:where(article,section,aside,div,ins):is([class^="sponsor-"], [class$="-sponsor"], [class*="-sponsor-"], [class^="sponsor_"], [class$="_sponsor"], [class*="_sponsor_"]):not([class*="code"])
 *##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"]):not([id*="code"])
 *##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"]):not([id*="code"])
+
+! ---- Sticky footers / login & signup CTAs ----
+*##:is(footer,div,section,aside)[class*="sticky" i]:has(:matches-css(position: fixed)):has-text(/reg(í|i)strate|inicia sesi(ó|o)n/i)
