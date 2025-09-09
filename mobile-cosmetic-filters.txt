@@ -1,7 +1,7 @@
 ! Title: uBlock Filters – Mobile Annoyances
 ! Description: Personal blacklist for cosmetic filtering on mobile devices.
-! Homepage: https://github.com/hexpreso/ubo-static-blacklist
-! Forums: https://github.com/hexpreso/ubo-static-blacklist/issues
+! Homepage: https://github.com/rxreborn/ubo-static-blacklist
+! Forums: https://github.com/rxreborn/ubo-static-blacklist/issues
 ! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
 ! Last Updated: 2025-08-28
 ! Expires: 4 days
