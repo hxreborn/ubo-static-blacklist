@@ -7,8 +7,8 @@ Personal uBlock Origin filter lists to remove annoyances.
 1.  In uBlock Origin's settings, go to the "Filter lists" tab.
 2.  Under "Custom", add these URLs:
     ```
-    https://raw.githubusercontent.com/Rafa2298/ubo-static-blacklist/main/general-cosmeric-search-filters.txt
-    https://raw.githubusercontent.com/Rafa2298/ubo-static-blacklist/main/mobile-cosmetic-filters.txt
+    https://raw.githubusercontent.com/hxreborn/ubo-static-blacklist/main/general-cosmeric-search-filters.txt
+    https://raw.githubusercontent.com/hxreborn/ubo-static-blacklist/main/mobile-cosmetic-filters.txt
     ```
 3.  Apply changes.
 
