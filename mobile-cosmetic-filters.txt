@@ -85,4 +85,5 @@
 ! ---- Sticky widget-advise footer ----
 *##:is(footer,div,section,aside)[class*="widget-advise" i]
 
-
+! ---- Domain specific ----
+z-library.sk###searchResultBox > .ready
