@@ -86,4 +86,5 @@
 *##:is(footer,div,section,aside)[class*="widget-advise" i]
 
 ! ---- Domain specific ----
-z-library.sk###searchResultBox > .ready
+www.europapress.es###intextsmartclip
+www.europapress.es##.r89-mobile-billboard-top-articles
