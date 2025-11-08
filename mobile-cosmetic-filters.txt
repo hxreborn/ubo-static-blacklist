@@ -5,11 +5,15 @@
 ! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
 ! Last Updated: 2025-11-08
 ! Expires: 1 day
-! Version: 2025.11.08.1
+! Version: 2025.11.08.2
 
 !! ==========================
 !! 🌍 Mobile-Specific Cosmetic Filters
 !! ==========================
+
+! --- Network filters (block resources before download) ---
+! Block Google OAuth SSO iframes on social media
+||accounts.google.com^$third-party,domain=x.com|facebook.com|instagram.com|linkedin.com|reddit.com|tiktok.com|pinterest.com|threads.net
 
 ! --- Stable ad attributes (first line of defense) ---
 ! google crap and stable ad attributes — the stuff you actually want to kill.
@@ -96,3 +100,11 @@ www.europapress.es###intextsmartclip
 www.europapress.es##[id^="roba_movil_"]
 www.europapress.es##[class*="mobile-billboard-top-article"]
 www.vozpopuli.com##[id^="roba_movil_"]
+
+! ---- Social media - Block Google OAuth SSO popups ----
+x.com##div[role="dialog"]:has-text(/Iniciar sesión con Google|Sign in with Google/i)
+x.com##div[aria-modal="true"]:has-text(/Google para iniciar sesión|Use your Google Account/i)
+facebook.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
+instagram.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
+linkedin.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
+reddit.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
