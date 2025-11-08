@@ -3,9 +3,9 @@
 ! Homepage: https://github.com/hxreborn/ubo-static-blacklist
 ! Forums: https://github.com/hxreborn/ubo-static-blacklist/issues
 ! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
-! Last Updated: 2025-08-28
-! Expires: 4 days
-! Version: 2025.08.28.5
+! Last Updated: 2025-11-08
+! Expires: 1 day
+! Version: 2025.11.08.1
 
 !! ==========================
 !! 🌍 Mobile-Specific Cosmetic Filters
@@ -77,14 +77,22 @@
 ! --- Promo / Sponsor tokens (scoped; avoid coupon fields) ---
 ! promo/sponsor crap — scoped to big containers and skip promo-code fields.
 *##:where(article,section,aside,div,ins):is([class~="promo"], [class~="promoted"], [class~="sponsor"], [class~="sponsored"]):not([class*="code"])
-*##:where(article,section,aside,div,ins):is([class^="promo-"], [class$="-promo"], [class*="-promo-"], [class^="promo_"], [class$="_promo"], [class*="_promo_"]):not([class*="code"])
-*##:where(article,section,aside,div,ins):is([class^="sponsor-"], [class$="-sponsor"], [class*="-sponsor-"], [class^="sponsor_"], [class$="_sponsor"], [class*="_sponsor_"]):not([class*="code"])
-*##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"]):not([id*="code"])
-*##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"]):not([id*="code"])
+*##:where(article,section,aside,div,ins):is([class^="promo-"], [class$="-promo"], [class*="-promo-"], [class^="promo_"], [class$="_promo"], [class*="_promo_"], [class$="__promo"], [class*="__promo"]]):not([class*="code"])
+*##:where(article,section,aside,div,ins):is([class^="sponsor-"], [class$="-sponsor"], [class*="-sponsor-"], [class^="sponsor_"], [class$="_sponsor"], [class*="_sponsor_"], [class$="__sponsor"], [class*="__sponsor"]]):not([class*="code"])
+*##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"], [id$="__promo"], [id*="__promo"]]):not([id*="code"])
+*##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"], [id$="__sponsor"], [id*="__sponsor"]]):not([id*="code"])
 
 ! ---- Sticky widget-advise footer ----
 *##:is(footer,div,section,aside)[class*="widget-advise" i]
 
 ! ---- Domain specific ----
+www.androidauthority.com##.pw-incontent
+www.androidauthority.com##.viafoura
+www.androidauthority.com##div:has-text(Promoted):upward(3)
+www.androidauthority.com##div:has-text(/favorite source in Google Discover/i):upward(2)
+www.cual-es-mi-ip.net##.gaz-gdpr-modal
+www.elperiodicodearagon.com##.ft-org-header-regionales__promo
 www.europapress.es###intextsmartclip
-www.europapress.es##.r89-mobile-billboard-top-articles
+www.europapress.es##[id^="roba_movil_"]
+www.europapress.es##[class*="mobile-billboard-top-article"]
+www.vozpopuli.com##[id^="roba_movil_"]
