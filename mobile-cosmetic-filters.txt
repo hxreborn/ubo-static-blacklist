@@ -3,9 +3,9 @@
 ! Homepage: https://github.com/hxreborn/ubo-static-blacklist
 ! Forums: https://github.com/hxreborn/ubo-static-blacklist/issues
 ! allowGenericProceduralFilters must be set to true: https://github.com/gorhill/uBlock/wiki/Advanced-settings#allowgenericproceduralfilters
-! Last Updated: 2025-11-16
+! Last Updated: 2025-11-23
 ! Expires: 1 day
-! Version: 2025.11.16.1
+! Version: 2025.11.23.1
 
 !! ==========================
 !! 🌍 Mobile-Specific Cosmetic Filters
@@ -99,6 +99,8 @@ www.elperiodicodearagon.com##.ft-org-header-regionales__promo
 www.europapress.es###intextsmartclip
 www.europapress.es##[id^="roba_movil_"]
 www.europapress.es##[class*="mobile-billboard-top-article"]
+www.lavanguardia.com##.subscription
+www.lavanguardia.com##.freemium
 sourceforge.net###floating-content
 sourceforge.net###floating-content-wrapper
 sourceforge.net###float-image
