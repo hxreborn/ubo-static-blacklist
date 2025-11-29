@@ -7,109 +7,111 @@
 ! Expires: 1 day
 ! Version: 2025.11.23.1
 
-!! ==========================
-!! 🌍 Mobile-Specific Cosmetic Filters
-!! ==========================
+! ==========================
+! Mobile-Specific Cosmetic Filters
+! ==========================
 
-! --- Network filters (block resources before download) ---
-! Block Google OAuth SSO iframes on social media
+! ===========================================
+! SECTION 1: Network Filters
+! ===========================================
+! Google OAuth iframe blocking
 ||accounts.google.com^$third-party,domain=x.com|facebook.com|instagram.com|linkedin.com|reddit.com|tiktok.com|pinterest.com|threads.net
 
-! --- Stable ad attributes (first line of defense) ---
-! google crap and stable ad attributes — the stuff you actually want to kill.
+! ===========================================
+! SECTION 2: Google/Standard Ad Attributes
+! ===========================================
 *##:is(iframe,div)[id^="google_ads_iframe_"]
-*##[data-ad], [data-ad-unit], [data-ad-slot], [data-ad-client], [data-ad-format], [data-ad-type], [data-ad-size], [data-ad-manager-id], [data-ad-targeting]
+*##:is([data-ad], [data-ad-unit], [data-ad-slot], [data-ad-client], [data-ad-format], [data-ad-type], [data-ad-size], [data-ad-manager-id], [data-ad-targeting], [data-ads], [data-ads-slot], [data-ads-targeting], [data-ad-container], [data-ad-module], [data-ad-placeholder], [data-ad-rendered], [data-ad-loaded], [data-ad-label], [data-adlabel], [data-ads-label])
 *##[data-google-av-ad-format], [data-google-query-id], [data-google-av-cxn]
 *##[aria-label="advertisement" i]
 
-! --- AMP & other garbage (annoying ad tags, can break some AMP pages) ---
-! amp and inner google iframes — ugly, but necessary for coverage.
+! ===========================================
+! SECTION 3: AMP Ads
+! ===========================================
 *##:is(amp-ad, amp-embed[type="ads"])
 *##iframe[id^="aswift_"]
 *##:where(article,section,aside,div,ins)[data-promoted], :where(article,section,aside,div,ins)[data-sponsored], :where(article,section,aside,div,ins)[data-paid]
 *##[data-commercial-node]
 *##[data-gpt], [data-gpt-slot]
 *##[data-native-ad], [data-native_ad], [data-native-ads], [data-native_ads]
-*##:where(article,section,aside,div,ins)[aria-label="Publicidad" i], :where(article,section,aside,div,ins)[aria-label="Anuncio" i], :where(article,section,aside,div,ins)[aria-label="Anuncios" i], :where(article,section,aside,div,ins)[aria-label="Patrocinado" i]
-*##[data-ads], [data-ads-slot], [data-ads-targeting]
-*##[data-ad-container], [data-ad-module], [data-ad-placeholder]
-*##[data-ad-rendered], [data-ad-loaded]
-*##[data-ad-label], [data-adlabel], [data-ads-label]
-*##:where(article,section,aside,div,ins)[data-label="Publicidad" i], :where(article,section,aside,div,ins)[data-label="Anuncio" i], :where(article,section,aside,div,ins)[data-label="Anuncios" i], :where(article,section,aside,div,ins)[data-label="Patrocinado" i]
-*##:where(article,section,aside,div,ins)[role="complementary"][class~="advert" i]
 
-! --- Vendor / Ad-stack junk (third-party nonsense) ---
-! vendor cruft: Taboola, Outbrain, prebid, yadda yadda — keep these for extra coverage.
-*##:is([class*="adsbygoogle" i], [id*="adsbygoogle" i])
-*##:is([class*="prebid" i], [id*="prebid" i])
-*##:is([class*="dfp" i], [id*="dfp" i])
-*##:is([class*="taboola" i], [id*="taboola" i])
-*##:where(article,section,aside,div,ins):is([class*="trc_" i], [id*="trc_" i])
-*##:is([class*="outbrain" i], [id*="outbrain" i])
-*##:is([class*="criteo" i], [id*="criteo" i])
-*##:is([class*="teads" i], [id*="teads" i])
-*##:is([class*="pubmatic" i], [id*="pubmatic" i])
-*##:is([class*="openx" i], [id*="openx" i])
-*##:is([class*="rubicon" i], [id*="rubicon" i], [class*="magnite" i], [id*="magnite" i])
-*##:is([class*="appnexus" i], [id*="appnexus" i], [class*="adnxs" i], [id*="adnxs" i])
-*##:is([class*="medianet" i], [id*="medianet" i])
-*##:is([class*="apstag" i], [id*="apstag" i])
-*##:is([class*="ezoic" i], [id*="ezoic" i], [class*="adngin" i], [id*="adngin" i])
-*##:is([class*="adthrive" i], [id*="adthrive" i])
-*##:is([class*="mediavine" i], [id*="mediavine" i])
+! ===========================================
+! SECTION 4: Ad Vendor Networks (A-Z)
+! ===========================================
+*##:is([class*="adngin" i], [id*="adngin" i])
 *##:is([class*="adpushup" i], [id*="adpushup" i])
-*##:is([class*="revcontent" i], [id*="revcontent" i])
-*##:is([class*="plista" i], [id*="plista" i])
-*##:is([class*="zergnet" i], [id*="zergnet" i])
-*##:is([class*="ligatus" i], [id*="ligatus" i])
-*##:is([class*="connatix" i], [id*="connatix" i])
-*##:is([class*="sharethrough" i], [id*="sharethrough" i])
-*##:is([class*="triplelift" i], [id*="triplelift" i])
-*##:is([class*="gumgum" i], [id*="gumgum" i])
-*##:is([class*="mgid" i], [id*="mgid" i])
-*##:is([class*="dianomi" i], [id*="dianomi" i])
-*##:is([class*="powerinbox" i], [id*="powerinbox" i], [class*="jeeng" i], [id*="jeeng" i])
-*##:is([class*="yandex-rtb" i], [id*="yandex-rtb" i], [class*="yandex_rtb" i], [id*="yandex_rtb" i])
+*##:is([class*="adsbygoogle" i], [id*="adsbygoogle" i])
+*##:is([class*="adthrive" i], [id*="adthrive" i])
 *##:is([class~="adx" i])
+*##:is([class*="appnexus" i], [id*="appnexus" i], [class*="adnxs" i], [id*="adnxs" i])
+*##:is([class*="apstag" i], [id*="apstag" i])
+*##:is([class*="connatix" i], [id*="connatix" i])
+*##:is([class*="criteo" i], [id*="criteo" i])
+*##:is([class*="dfp" i], [id*="dfp" i])
+*##:is([class*="dianomi" i], [id*="dianomi" i])
+*##:is([class*="ezoic" i], [id*="ezoic" i])
+*##:is([class*="gumgum" i], [id*="gumgum" i])
+*##:is([class*="medianet" i], [id*="medianet" i])
+*##:is([class*="mediavine" i], [id*="mediavine" i])
+*##:is([class*="mgid" i], [id*="mgid" i])
+*##:is([class*="openx" i], [id*="openx" i])
+*##:is([class*="outbrain" i], [id*="outbrain" i])
+*##:is([class*="plista" i], [id*="plista" i])
+*##:is([class*="powerinbox" i], [id*="powerinbox" i], [class*="jeeng" i], [id*="jeeng" i])
+*##:is([class*="prebid" i], [id*="prebid" i])
+*##:is([class*="pubmatic" i], [id*="pubmatic" i])
+*##:is([class*="revcontent" i], [id*="revcontent" i])
+*##:is([class*="rubicon" i], [id*="rubicon" i], [class*="magnite" i], [id*="magnite" i])
+*##:is([class*="sharethrough" i], [id*="sharethrough" i])
+*##:is([class*="taboola" i], [id*="taboola" i])
+*##:is([class*="teads" i], [id*="teads" i])
+*##:is([class*="triplelift" i], [id*="triplelift" i])
+*##:is([class*="yandex-rtb" i], [id*="yandex-rtb" i], [class*="yandex_rtb" i], [id*="yandex_rtb" i])
+*##:is([class*="zergnet" i], [id*="zergnet" i])
+*##:where(article,section,aside,div,ins):is([class*="trc_" i], [id*="trc_" i])
 
-! --- Class / ID token rules (last resort) ---
-! bounded token matching only; avoids header/shadow disasters.
+! ===========================================
+! SECTION 5: Generic Ad Tokens
+! ===========================================
 *##:is([class~="ad"], [class~="ads"], [class~="advert"])
 *##:where(article,section,aside,div,ins):is([class^="ad-"], [class$="-ad"], [class*="-ad-"], [class^="ad_"], [class$="_ad"], [class*="_ad_"])
 *##:where(article,section,aside,div,ins):is([id^="ad-"], [id$="-ad"], [id*="-ad-"], [id^="ad_"], [id$="_ad"], [id*="_ad_"])
 
-! --- Promo / Sponsor tokens (scoped; avoid coupon fields) ---
-! promo/sponsor crap — scoped to big containers and skip promo-code fields.
+! ===========================================
+! SECTION 6: Promo/Sponsor Patterns
+! ===========================================
 *##:where(article,section,aside,div,ins):is([class~="promo"], [class~="promoted"], [class~="sponsor"], [class~="sponsored"]):not([class*="code"])
 *##:where(article,section,aside,div,ins):is([class^="promo-"], [class$="-promo"], [class*="-promo-"], [class^="promo_"], [class$="_promo"], [class*="_promo_"], [class$="__promo"], [class*="__promo"]]):not([class*="code"])
 *##:where(article,section,aside,div,ins):is([class^="sponsor-"], [class$="-sponsor"], [class*="-sponsor-"], [class^="sponsor_"], [class$="_sponsor"], [class*="_sponsor_"], [class$="__sponsor"], [class*="__sponsor"]]):not([class*="code"])
 *##:where(article,section,aside,div,ins):is([id^="promo-"], [id$="-promo"], [id*="-promo-"], [id^="promo_"], [id$="_promo"], [id*="_promo_"], [id$="__promo"], [id*="__promo"]]):not([id*="code"])
 *##:where(article,section,aside,div,ins):is([id^="sponsor-"], [id$="-sponsor"], [id*="-sponsor-"], [id^="sponsor_"], [id$="_sponsor"], [id*="_sponsor_"], [id$="__sponsor"], [id*="__sponsor"]]):not([id*="code"])
-
-! ---- Sticky widget-advise footer ----
+! Spanish ad labels
+*##:where(article,section,aside,div,ins):is([aria-label*="Publicidad" i], [aria-label*="Anuncio" i], [aria-label*="Patrocinado" i], [data-label*="Publicidad" i], [data-label*="Anuncio" i], [data-label*="Patrocinado" i])
+! Sticky widget footer
 *##:is(footer,div,section,aside)[class*="widget-advise" i]
 
-! ---- Domain specific ----
+! ===========================================
+! SECTION 7: Domain-Specific Rules
+! ===========================================
+
+! -- Android Authority --
 www.androidauthority.com##.pw-incontent
 www.androidauthority.com##.viafoura
-www.androidauthority.com##div:has-text(Promoted):upward(3)
-www.androidauthority.com##div:has-text(/favorite source in Google Discover/i):upward(2)
+www.androidauthority.com##.nc-posts-list div:has-text(Promoted):upward(3)
+www.androidauthority.com##article div:has-text(/favorite source in Google Discover/i):upward(2)
+
+! -- Spanish News --
 www.cual-es-mi-ip.net##.gaz-gdpr-modal
 www.elperiodicodearagon.com##.ft-org-header-regionales__promo
 www.europapress.es###intextsmartclip
-www.europapress.es##[id^="roba_movil_"]
+www.europapress.es,www.vozpopuli.com##[id^="roba_movil_"]
 www.europapress.es##[class*="mobile-billboard-top-article"]
 www.lavanguardia.com##.subscription
 www.lavanguardia.com##.freemium
-sourceforge.net###floating-content
-sourceforge.net###floating-content-wrapper
-sourceforge.net###float-image
-www.vozpopuli.com##[id^="roba_movil_"]
 
-! ---- Social media - Block Google OAuth SSO popups ----
-x.com##div[role="dialog"]:has-text(/Iniciar sesión con Google|Sign in with Google/i)
+! -- SourceForge --
+sourceforge.net##:is(#floating-content, #floating-content-wrapper, #float-image)
+
+! -- Social Media OAuth Popups --
+x.com,facebook.com,instagram.com,linkedin.com,reddit.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google|Iniciar sesión con Google/i)
 x.com##div[aria-modal="true"]:has-text(/Google para iniciar sesión|Use your Google Account/i)
-facebook.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
-instagram.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
-linkedin.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
-reddit.com##div[role="dialog"]:has-text(/Sign in with Google|Continue with Google/i)
