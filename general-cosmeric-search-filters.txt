@@ -3996,8 +3996,3 @@ duckduckgo.com##ol.react-results--main a[href*="zxc.wiki/"]:upward(article)
 duckduckgo.com##.tile-wrap a[href*="zxc.wiki/"]:upward(.tile)
 startpage.com##.w-gl__result:has(a[href*="zxc.wiki/"])
 startpage.com##.image-container:has(div.image-quick-details span:has-text(zxc.wiki/))
-
-! --- Site-specific promotional popups ---
-! ajazstore.com: Block Black Friday spinner popup (modal containers with hashed class names)
-ajazstore.com##[class*="spinWheel"]
-ajazstore.com##[class*="modalContainer"][class*="_"]

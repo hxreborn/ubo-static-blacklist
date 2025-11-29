@@ -100,6 +100,10 @@ www.androidauthority.com##.viafoura
 www.androidauthority.com##.nc-posts-list div:has-text(Promoted):upward(3)
 www.androidauthority.com##article div:has-text(/favorite source in Google Discover/i):upward(2)
 
+! -- Ajazstore --
+ajazstore.com##[class*="spinWheel"]
+ajazstore.com##[class*="modalContainer"][class*="_"]
+
 ! -- Spanish News --
 www.cual-es-mi-ip.net##.gaz-gdpr-modal
 www.elperiodicodearagon.com##.ft-org-header-regionales__promo
