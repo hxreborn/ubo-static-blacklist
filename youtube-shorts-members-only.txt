@@ -1,0 +1,130 @@
+! Title: YouTube Shorts & Members Only Blocker
+! Description: Hide YouTube Shorts and Members Only videos on desktop and mobile
+! Homepage: https://github.com/hxreborn/ubo-static-blacklist
+! Expires: 7 days (update frequency)
+! Last modified: 2026-04-23
+! License: MIT
+
+! ──────────────────────────────────────────────
+! SHORTS: Sidebar & Navigation
+! ──────────────────────────────────────────────
+
+! Sidebar Shorts button (full width)
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+! Sidebar Shorts button (collapsed/tablet)
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Shorts$/i))
+
+! ──────────────────────────────────────────────
+! SHORTS: Homepage & Subscriptions Shelves
+! ──────────────────────────────────────────────
+
+! Rich section (new layout) — except history page
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-rich-section-renderer:has(#title:has-text(/(^| )Shorts( |$)/i))
+! Reel shelf (old layout) — except history page
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(/(^| )Shorts( |$)/i))
+! Rich shelf containing Shorts (found in DOM dumps 2026-04)
+www.youtube.com##ytd-rich-shelf-renderer:has(ytm-shorts-lockup-view-model)
+www.youtube.com##ytd-rich-shelf-renderer:has(ytd-reel-item-renderer)
+! Rich item wrapping ytm-shorts-lockup-view-model (individual Shorts cards)
+www.youtube.com##ytd-rich-item-renderer:has(ytm-shorts-lockup-view-model)
+
+! ──────────────────────────────────────────────
+! SHORTS: Search Results
+! ──────────────────────────────────────────────
+
+! Grid shelf with Shorts (new search layout)
+www.youtube.com##.shelf-header-layout-wiz__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
+www.youtube.com##.yt-shelf-header-layout__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
+! Grid shelf with shortsLockup host
+www.youtube.com##ytd-search grid-shelf-view-model:has(.shortsLockupViewModelHost)
+! Reel shelf in search
+www.youtube.com##ytd-search ytd-reel-shelf-renderer
+! Shelf renderer with Shorts
+www.youtube.com##ytd-shelf-renderer:has(ytm-shorts-lockup-view-model)
+www.youtube.com##ytd-shelf-renderer:has(ytd-reel-item-renderer)
+
+! ──────────────────────────────────────────────
+! SHORTS: Individual Videos with Shorts Overlay
+! ──────────────────────────────────────────────
+
+! Videos with SHORTS overlay on thumbnail
+www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
+www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
+! Subscription feed items with Shorts overlay
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="subscriptions"]:has(ytd-video-renderer:has([overlay-style="SHORTS"]))
+
+! ──────────────────────────────────────────────
+! SHORTS: Videos with #shorts in Title
+! ──────────────────────────────────────────────
+
+www.youtube.com##ytd-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+www.youtube.com##ytd-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! ──────────────────────────────────────────────
+! SHORTS: Channel Pages
+! ──────────────────────────────────────────────
+
+! Shorts tab (new style)
+www.youtube.com##yt-tab-shape:has-text(/^Shorts$/)
+! Shorts tab (old paper-tab style)
+www.youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Shorts))
+! Shorts shelf on channel page
+www.youtube.com##[page-subtype="channels"] ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
+
+! ──────────────────────────────────────────────
+! SHORTS: Watch Page Sidebar
+! ──────────────────────────────────────────────
+
+! Shorts in sidebar recommendations
+www.youtube.com##ytd-compact-video-renderer:has(a[href*="/shorts/"])
+! Shorts remixes in video descriptions and suggestions
+www.youtube.com##ytd-reel-shelf-renderer:has(#title:has-text(/(^| )Shorts.?Remix.*$/i))
+
+! ──────────────────────────────────────────────
+! SHORTS: Chip/Category Filters
+! ──────────────────────────────────────────────
+
+! Shorts chip on homepage and search
+www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+
+! ──────────────────────────────────────────────
+! SHORTS: New View Model Elements (2025-2026)
+! ──────────────────────────────────────────────
+
+! ytm-shorts-lockup-view-model — new Shorts card component
+! (appears on desktop despite ytm- prefix, 81-153 instances in DOM dumps)
+www.youtube.com##ytm-shorts-lockup-view-model
+! ytd-reel-item-renderer — individual reel/Short in shelves
+www.youtube.com##ytd-reel-item-renderer
+
+! ──────────────────────────────────────────────
+! SHORTS: Grid Layout Fix
+! ──────────────────────────────────────────────
+
+! Fix empty spaces from removed Shorts in grid
+www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! ──────────────────────────────────────────────
+! MEMBERS ONLY: All Contexts
+! ──────────────────────────────────────────────
+
+! New badge style (.yt-badge-shape--membership)
+www.youtube.com##ytd-rich-item-renderer:has(.yt-badge-shape--membership)
+www.youtube.com##ytd-video-renderer:has(.yt-badge-shape--membership)
+www.youtube.com##ytd-compact-video-renderer:has(.yt-badge-shape--membership)
+www.youtube.com##ytd-grid-video-renderer:has(.yt-badge-shape--membership)
+
+! Old badge style (.badge-style-type-members-only)
+www.youtube.com##ytd-rich-item-renderer:has(.badge-style-type-members-only)
+www.youtube.com##ytd-video-renderer:has(.badge-style-type-members-only)
+www.youtube.com##ytd-compact-video-renderer:has(.badge-style-type-members-only)
+www.youtube.com##ytd-grid-video-renderer:has(.badge-style-type-members-only)
+
+! Members only lockup in watch page sidebar
+www.youtube.com##ytd-watch-flexy yt-lockup-view-model:has(.yt-badge-shape__text:has-text(Members only))
+
+! Members only via text match (fallback)
+www.youtube.com##ytd-rich-item-renderer:has(ytd-badge-supported-renderer:has-text(Members only))
+www.youtube.com##ytd-video-renderer:has(ytd-badge-supported-renderer:has-text(Members only))
